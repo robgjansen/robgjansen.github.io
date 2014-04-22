@@ -1,8 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://www.robgjansen.com/news/2014/04/21/news-feature-now-active/</loc>
+        <lastmod>2014-04-21T23:21:12-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.robgjansen.com/news/2014/04/21/static-site-generator/</loc>
+        <lastmod>2014-04-21T23:18:36-04:00</lastmod>
+    </url>
+    <url>
         <loc>http://www.robgjansen.com/development/</loc>
         <lastmod>2014-01-12T12:53:52-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.robgjansen.com/</loc>
+        <lastmod>2014-04-21T23:21:12-04:00</lastmod>
     </url>
     <url>
         <loc>http://www.robgjansen.com/talks/</loc>
@@ -13,12 +25,8 @@
         <lastmod>2014-01-25T10:09:41-05:00</lastmod>
     </url>
     <url>
-        <loc>http://www.robgjansen.com/blog/</loc>
-        <lastmod>2014-01-13T21:51:30-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://www.robgjansen.com/blog/archives/</loc>
-        <lastmod>2014-01-10T18:37:22-05:00</lastmod>
+        <loc>http://www.robgjansen.com/archives/</loc>
+        <lastmod>2014-04-21T23:21:12-04:00</lastmod>
     </url>
     <url>
         <loc>http://www.robgjansen.com/404.html</loc>
@@ -29,7 +37,7 @@
         <lastmod>2014-01-08T18:32:46-05:00</lastmod>
     </url>
     <url>
-        <loc>http://www.robgjansen.com/</loc>
+        <loc>http://www.robgjansen.com/bio/</loc>
         <lastmod>2014-01-12T12:48:49-05:00</lastmod>
     </url>
 </urlset>
