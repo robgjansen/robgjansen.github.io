@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Publications | Rob G. Jansen]]></title>
   <link href="http://www.robgjansen.com/news/categories/publications/atom.xml" rel="self"/>
   <link href="http://www.robgjansen.com/"/>
-  <updated>2014-05-27T22:26:57-04:00</updated>
+  <updated>2014-05-27T22:28:27-04:00</updated>
   <id>http://www.robgjansen.com/</id>
   <author>
     <name><![CDATA[Rob Jansen]]></name>
@@ -27,9 +27,12 @@
     <link href="http://www.robgjansen.com/news/2014/05/27/papers-accepted-to-hotpets-2014/"/>
     <updated>2014-05-27T22:16:10-04:00</updated>
     <id>http://www.robgjansen.com/news/2014/05/27/papers-accepted-to-hotpets-2014</id>
-    <content type="html"><![CDATA[<p>Two of our submissions about integrating BitCoin and Tor were accepted to HotPETs 2014!
-  + “From Onions to Shallots: Rewarding Tor Relays with TEARS”
-  + “A TorPath to TorCoin: Proof-of-Bandwidth Altcoins for Compensating Relays”</p>
+    <content type="html"><![CDATA[<p>Two of our submissions about integrating BitCoin and Tor were accepted to HotPETs 2014!</p>
+
+<ul>
+  <li>“From Onions to Shallots: Rewarding Tor Relays with TEARS”</li>
+  <li>“A TorPath to TorCoin: Proof-of-Bandwidth Altcoins for Compensating Relays”</li>
+</ul>
 
 ]]></content>
   </entry>
