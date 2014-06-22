@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Publications | Rob G. Jansen]]></title>
   <link href="http://www.robgjansen.com/news/categories/publications/atom.xml" rel="self"/>
   <link href="http://www.robgjansen.com/"/>
-  <updated>2014-06-03T10:27:27-04:00</updated>
+  <updated>2014-06-22T13:23:00-04:00</updated>
   <id>http://www.robgjansen.com/</id>
   <author>
     <name><![CDATA[Rob Jansen]]></name>
@@ -18,7 +18,7 @@
     <link href="http://www.robgjansen.com/news/2014/05/27/paper-accepted-to-usenix-security-2014/"/>
     <updated>2014-05-27T22:22:13-04:00</updated>
     <id>http://www.robgjansen.com/news/2014/05/27/paper-accepted-to-usenix-security-2014</id>
-    <content type="html"><![CDATA[<p>Our paper entitled “Never Been KIST: Tor’s Congestion Management Blossoms with Kernel-Informed Socket Transport” has been conditionally accepted upon shepherd approval to USENIX Security 2014!</p>
+    <content type="html"><![CDATA[<p>Our paper entitled “Never Been KIST: Tor’s Congestion Management Blossoms with Kernel-Informed Socket Transport” has been ~~conditionally accepted upon shepherd approval~~ accepted to USENIX Security 2014!</p>
 ]]></content>
   </entry>
   
@@ -30,8 +30,8 @@
     <content type="html"><![CDATA[<p>Two of our submissions about integrating BitCoin and Tor were accepted to HotPETs 2014!</p>
 
 <ul>
-  <li>“From Onions to Shallots: Rewarding Tor Relays with TEARS”</li>
-  <li>“A TorPath to TorCoin: Proof-of-Bandwidth Altcoins for Compensating Relays”</li>
+  <li><a href="/publications/tears-hotpets2014.pdf">From Onions to Shallots: Rewarding Tor Relays with TEARS</a></li>
+  <li><a href="/publications/torpath-hotpets2014.pdf">A TorPath to TorCoin: Proof-of-Bandwidth Altcoins for Compensating Relays</a></li>
 </ul>
 
 ]]></content>
