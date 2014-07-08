@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Publications | Rob G. Jansen]]></title>
   <link href="http://www.robgjansen.com/news/categories/publications/atom.xml" rel="self"/>
   <link href="http://www.robgjansen.com/"/>
-  <updated>2014-06-22T13:32:27-04:00</updated>
+  <updated>2014-07-08T12:55:15-04:00</updated>
   <id>http://www.robgjansen.com/</id>
   <author>
     <name><![CDATA[Rob Jansen]]></name>
@@ -18,7 +18,7 @@
     <link href="http://www.robgjansen.com/news/2014/05/27/paper-accepted-to-usenix-security-2014/"/>
     <updated>2014-05-27T22:22:13-04:00</updated>
     <id>http://www.robgjansen.com/news/2014/05/27/paper-accepted-to-usenix-security-2014</id>
-    <content type="html"><![CDATA[<p>Our paper entitled “Never Been KIST: Tor’s Congestion Management Blossoms with Kernel-Informed Socket Transport” has been <del>conditionally accepted upon shepherd approval</del> accepted to USENIX Security 2014!</p>
+    <content type="html"><![CDATA[<p>Our paper entitled “<a href="/publications/kist-sec2014.pdf">Never Been KIST: Tor’s Congestion Management Blossoms with Kernel-Informed Socket Transport</a>” has been <del>conditionally accepted upon shepherd approval</del> accepted to USENIX Security 2014!</p>
 ]]></content>
   </entry>
   
