@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Research | Rob G. Jansen]]></title>
   <link href="http://www.robgjansen.com/news/categories/research/atom.xml" rel="self"/>
   <link href="http://www.robgjansen.com/"/>
-  <updated>2014-07-08T13:15:44-04:00</updated>
+  <updated>2014-07-14T16:50:38-04:00</updated>
   <id>http://www.robgjansen.com/</id>
   <author>
     <name><![CDATA[Rob Jansen]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Blog Post Summarizing New Tor+Bitcoin Research]]></title>
+    <link href="http://www.robgjansen.com/news/2014/07/14/blog-post-summarizing-new-tor-plus-bitcoin-research/"/>
+    <updated>2014-07-14T16:42:00-04:00</updated>
+    <id>http://www.robgjansen.com/news/2014/07/14/blog-post-summarizing-new-tor-plus-bitcoin-research</id>
+    <content type="html"><![CDATA[<p>I just published <a href="https://blog.torproject.org/blog/tor-incentives-research-roundup-goldstar-par-braids-lira-tears-and-torcoin">a new post on the TorProject blog</a> summarizing the current state of research on Tor incentive schemes and related challenges. The post includes information about the new TorCoin and TEARS research papers that will appear at HotPETs later this week.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Paper Accepted to USENIX Security 2014]]></title>
