@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Publications | Rob G. Jansen]]></title>
   <link href="http://www.robgjansen.com/news/categories/publications/atom.xml" rel="self"/>
   <link href="http://www.robgjansen.com/"/>
-  <updated>2014-08-25T20:23:26-04:00</updated>
+  <updated>2014-09-14T22:29:04-04:00</updated>
   <id>http://www.robgjansen.com/</id>
   <author>
     <name><![CDATA[Rob Jansen]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Paper Accepted to WPES 2014]]></title>
+    <link href="http://www.robgjansen.com/news/2014/09/14/paper-accepted-to-wpes-2014/"/>
+    <updated>2014-09-14T22:25:45-04:00</updated>
+    <id>http://www.robgjansen.com/news/2014/09/14/paper-accepted-to-wpes-2014</id>
+    <content type="html"><![CDATA[<p>Our paper entitled “<a href="/publications/imux-wpes2014.pdf" class="title">IMUX: Managing Tor Connections from Two to Infinity, and Beyond</a>” has been accepted to WPES 2014!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Paper Accepted to USENIX Security 2014]]></title>
