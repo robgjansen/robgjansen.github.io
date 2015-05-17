@@ -4,7 +4,7 @@
   <title><![CDATA[Category: News | Rob G. Jansen]]></title>
   <link href="http://www.robgjansen.com/news/categories/news/atom.xml" rel="self"/>
   <link href="http://www.robgjansen.com/"/>
-  <updated>2015-04-17T10:50:46-04:00</updated>
+  <updated>2015-05-17T14:23:11-04:00</updated>
   <id>http://www.robgjansen.com/</id>
   <author>
     <name><![CDATA[Rob Jansen]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[I Am Co-chairing WPES 2015]]></title>
+    <link href="http://www.robgjansen.com/news/2015/05/17/i-am-co-chairing-wpes-2015/"/>
+    <updated>2015-05-17T14:15:51-04:00</updated>
+    <id>http://www.robgjansen.com/news/2015/05/17/i-am-co-chairing-wpes-2015</id>
+    <content type="html"><![CDATA[<p>I am co-chairing the 2015 Workshop on Privacy in the Electronic Society. The call for papers is currently available on <a href="https://wpes15.cs.umn.edu/">the workshop website</a>, and papers can be submitted through <a href="https://wpes15-submit.cs.umn.edu/">the submission site</a>. Please consider submitting and join a discussion with the top minds in digital privacy.</p>
+
+<p>WPES is co-located with the <a href="http://www.sigsac.org/ccs/CCS2015/">22nd ACM Conference on Computer and Communications Security</a> (CCS), which will take place in Denver, Colorado on October 12-16, 2015.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[News Feature Now Active]]></title>
