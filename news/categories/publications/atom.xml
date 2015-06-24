@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Publications | Rob G. Jansen]]></title>
   <link href="http://www.robgjansen.com/news/categories/publications/atom.xml" rel="self"/>
   <link href="http://www.robgjansen.com/"/>
-  <updated>2015-06-06T16:06:50-04:00</updated>
+  <updated>2015-06-23T21:04:24-04:00</updated>
   <id>http://www.robgjansen.com/</id>
   <author>
     <name><![CDATA[Rob Jansen]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Paper Describing Bitcoin Simulation Will Appear at CSET 2015]]></title>
+    <link href="http://www.robgjansen.com/news/2015/06/23/paper-describing-bitcoin-simulation-will-appear-at-cset-2015/"/>
+    <updated>2015-06-23T20:53:43-04:00</updated>
+    <id>http://www.robgjansen.com/news/2015/06/23/paper-describing-bitcoin-simulation-will-appear-at-cset-2015</id>
+    <content type="html"><![CDATA[<p>Our paper entitled “<a href="/publications/shadowbitcoin-cset2015.pdf">Shadow-Bitcoin: Scalable Simulation via Direct Execution of Multi-threaded Applications</a>” has been accepted to the 8th Workshop on Cybersecurity Experimenation and Test (CSET) 2015! It describes how we were able to run our own private Bitcoin network for experimental purposes using the <a href="https://github.com/shadow/shadow">Shadow simulator</a>. The private Bitcoin network made it easy to debug our Bitcoin code modifications and test the attacks that are also presented in the paper, and we think it will be a useful starting point for future Bitcoin research and development.</p>
+
+<p>CSET is co-located with USENIX Security and will be held in DC on 2015/08/10. Check out the <a href="https://www.usenix.org/conference/cset15/workshop-program">full CSET 2015 program</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Paper Accepted to WPES 2014]]></title>
