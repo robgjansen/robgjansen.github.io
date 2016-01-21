@@ -2,76 +2,76 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://www.robgjansen.com/news/2014/04/21/news-feature-now-active/</loc>
-        <lastmod>2014-04-21T23:21:12-04:00</lastmod>
+        <lastmod>2015-10-21T21:23:33-04:00</lastmod>
     </url>
     <url>
         <loc>http://www.robgjansen.com/news/2014/04/21/static-site-generator/</loc>
-        <lastmod>2014-04-21T23:18:36-04:00</lastmod>
+        <lastmod>2015-10-21T21:23:33-04:00</lastmod>
     </url>
     <url>
         <loc>http://www.robgjansen.com/news/2014/05/27/papers-accepted-to-hotpets-2014/</loc>
-        <lastmod>2014-06-22T12:40:37-04:00</lastmod>
+        <lastmod>2015-10-21T21:23:33-04:00</lastmod>
     </url>
     <url>
         <loc>
             http://www.robgjansen.com/news/2014/05/27/paper-accepted-to-usenix-security-2014/
         </loc>
-        <lastmod>2014-07-08T12:54:54-04:00</lastmod>
+        <lastmod>2015-10-21T21:23:33-04:00</lastmod>
     </url>
     <url>
         <loc>
             http://www.robgjansen.com/news/2014/07/14/blog-post-summarizing-new-tor-plus-bitcoin-research/
         </loc>
-        <lastmod>2014-07-14T16:44:59-04:00</lastmod>
+        <lastmod>2015-10-21T21:23:33-04:00</lastmod>
     </url>
     <url>
         <loc>http://www.robgjansen.com/news/2014/09/14/paper-accepted-to-wpes-2014/</loc>
-        <lastmod>2015-06-23T21:03:03-04:00</lastmod>
+        <lastmod>2015-10-21T21:23:33-04:00</lastmod>
     </url>
     <url>
         <loc>http://www.robgjansen.com/news/2015/05/17/sniper-attack-won-berman-award/</loc>
-        <lastmod>2015-05-17T14:28:00-04:00</lastmod>
+        <lastmod>2015-10-21T21:23:33-04:00</lastmod>
     </url>
     <url>
         <loc>http://www.robgjansen.com/news/2015/05/17/i-am-co-chairing-wpes-2015/</loc>
-        <lastmod>2015-05-17T14:22:04-04:00</lastmod>
+        <lastmod>2015-10-21T21:23:33-04:00</lastmod>
     </url>
     <url>
         <loc>
             http://www.robgjansen.com/news/2015/06/23/paper-describing-bitcoin-simulation-will-appear-at-cset-2015/
         </loc>
-        <lastmod>2015-06-23T21:02:51-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://www.robgjansen.com/</loc>
-        <lastmod>2015-06-23T21:03:03-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://www.robgjansen.com/archives/</loc>
-        <lastmod>2015-06-23T21:03:03-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://www.robgjansen.com/talks/</loc>
-        <lastmod>2015-08-15T22:17:13-04:00</lastmod>
+        <lastmod>2015-10-21T21:23:33-04:00</lastmod>
     </url>
     <url>
         <loc>http://www.robgjansen.com/404.html</loc>
-        <lastmod>2014-01-12T13:14:35-05:00</lastmod>
+        <lastmod>2015-10-21T21:23:33-04:00</lastmod>
     </url>
     <url>
-        <loc>http://www.robgjansen.com/publications/</loc>
-        <lastmod>2015-06-23T21:03:38-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://www.robgjansen.com/robots.txt</loc>
-        <lastmod>2014-01-08T18:32:46-05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://www.robgjansen.com/development/</loc>
-        <lastmod>2015-06-06T16:06:34-04:00</lastmod>
+        <loc>http://www.robgjansen.com/archives/</loc>
+        <lastmod>2015-10-21T21:23:33-04:00</lastmod>
     </url>
     <url>
         <loc>http://www.robgjansen.com/bio/</loc>
-        <lastmod>2015-05-30T12:52:10-04:00</lastmod>
+        <lastmod>2015-10-21T21:23:33-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.robgjansen.com/development/</loc>
+        <lastmod>2015-10-21T21:23:33-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.robgjansen.com/</loc>
+        <lastmod>2015-10-21T21:23:33-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.robgjansen.com/publications/</loc>
+        <lastmod>2015-10-21T21:23:33-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.robgjansen.com/robots.txt</loc>
+        <lastmod>2015-10-21T21:23:33-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.robgjansen.com/talks/</loc>
+        <lastmod>2015-10-21T21:23:33-04:00</lastmod>
     </url>
 </urlset>
