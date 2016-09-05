@@ -1,0 +1,545 @@
+
+
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+
+
+
+
+<meta charset="utf-8">
+
+
+
+
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Tor incentives research roundup: GoldStar, PAR, BRAIDS, LIRA, TEARS, and TorCoin - robgjansen.com</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="robgjansen.com">
+<meta property="og:title" content="Tor incentives research roundup: GoldStar, PAR, BRAIDS, LIRA, TEARS, and TorCoin">
+
+
+
+
+  <meta property="og:description" content="  This post originally appeared on the TorProject blog summarizing the then-current state of research on Tor incentive schemes and related challenges. The post includes information about the new TorCoin and TEARS research papers that appeared at HotPETs later that week.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2014-07-14T16:42:00-04:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Rob G. Jansen",
+      "url" : null,
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="robgjansen.com Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+
+
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="/">robgjansen.com</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="/bio">Bio</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="/publications">Publications</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="/talks">Talks</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="/blog">Blog</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+
+
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="/images/rob2.jpg" class="author__avatar" alt="Rob G. Jansen">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Rob G. Jansen</h3>
+    <p class="author__bio">Computer Scientist at the U.S. Naval Research Laboratory</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Washington, DC, USA</li>
+      
+      
+      
+        <li><a href="mailto:rob.g.jansen@nrl.navy.mil"><i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+      
+      
+      
+        <li><a href="https://twitter.com/robgjansen"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+      
+      
+      
+      
+        <li><a href="https://www.linkedin.com/in/robgjansen"><i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></li>
+      
+      
+      
+      
+      
+      
+        <li><a href="https://github.com/robgjansen"><i class="fa fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+        <li><a href="https://www.youtube.com/user/robgjansen"><i class="fa fa-fw fa-youtube-square" aria-hidden="true"></i> YouTube</a></li>
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Tor incentives research roundup: GoldStar, PAR, BRAIDS, LIRA, TEARS, and TorCoin">
+    <meta itemprop="description" content="  This post originally appeared on the TorProject blog summarizing the then-current state of research on Tor incentive schemes and related challenges. The post includes information about the new TorCoin and TEARS research papers that appeared at HotPETs later that week.">
+    <meta itemprop="datePublished" content="July 14, 2014">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Tor incentives research roundup: GoldStar, PAR, BRAIDS, LIRA, TEARS, and TorCoin
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  
+	  28 minute read
+	
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <blockquote>
+  <p>This post originally appeared <a href="https://blog.torproject.org/blog/tor-incentives-research-roundup-goldstar-par-braids-lira-tears-and-torcoin">on the TorProject blog</a> summarizing the then-current state of research on Tor incentive schemes and related challenges. The post includes information about the new TorCoin and TEARS research papers that appeared at HotPETs later that week.</p>
+</blockquote>
+
+<p>There has been a considerable amount of work in the area of Tor incentives since <a href="https://blog.torproject.org/blog/two-incentive-designs-tor">the last post on the topic in 2009</a> (over 5 years ago!). This post will give an overview of some of the major new approaches, including two new designs that I co-authored that will appear at <a href="https://www.petsymposium.org/2014/hotpets.php">the Workshop on Hot Topics in Privacy Enhancing Technologies</a> later this week. Before getting to those, I'll give background on Tor and discuss some of the social issues to help form a foundation of understanding.</p>
+<h2><a id="volunteer_resources" href="#volunteer_resources">Tor’s volunteer resource model</a></h2>
+<p>The Tor network consists of a <a href="http://torstatus.blutmagie.de/">set of relays</a> that provide bandwidth and other resources to forward traffic for Tor users. Anyone in any part of the world can contribute to Tor by downloading <a href="https://www.torproject.org/download/download-easy.html.en">the Tor software</a> and <a href="https://www.torproject.org/docs/tor-doc-relay.html.en">configuring it to operate in relay mode</a>. In fact, the Tor network is currently composed exclusively of such voluntarily-operated relays.</p>
+<p>There are many reasons existing relay operators might contribute to Tor. They may contribute because they really want a privacy-enhancing communication tool like Tor to exist, they believe in Tor’s philosophy of open source software and operational transparency, and they want Tor to succeed at its goals. They may wish to be part of the Tor community and the social movement to provide privacy-enhanced communication that connects people in all parts of the world. Tor may be practically useful to them for communication with others or to retrieve content that may otherwise be unavailable to them due to censorship or other network interference. Or they may be technically interested in the Tor software or network and the associated research problems raised by large, distributed systems. Finally, some may be interested for adversarial reasons, e.g., collecting information on the uses of the network or the content being transferred. All of these reasons provide intrinsic motivation for operators to contribute - they don’t expect any direct compensation for their contributions.</p>
+<p>The volunteer approach has succeeded so far: Tor now consists of <a href="https://metrics.torproject.org/network.html#networksize">over 5000 relays</a> transferring <a href="https://metrics.torproject.org/network.html#bandwidth">between 4 and 5 GiB/s in aggregate</a>. For the most part, this is "organic" growth obtained through community outreach, where volunteers first have personal contact with existing community members and become inspired to help.</p>
+<p>Whatever their reason for volunteering, relay operators not only contribute resources from the physical machines upon which their relays are executed, but also contribute the time involved with configuring, updating, and adjusting their relays as both the software and network mature. In many cases, operators also contribute monetarily through the direct purchase of dedicated machines or special fast connections to Internet Service Providers (ISPs), and exit relay operators spend social energy on maintaining relationships with their ISP (to make sure the ISP understands that requests coming from their machines are from Tor).</p>
+<p>However, because many people that are otherwise excited about or interested in Tor are incapable or unwilling to incur these expenses, there are far fewer Tor relays than Tor clients (users that use Tor to access content, e.g. via the Tor Browser Bundle, without directly contributing resources to the network). Expanding the set of relays could have many benefits: Tor could become faster, more reliable, and more secure while at the same time distributing trust among a larger and more diverse set of distributed peers. A larger network that is transferring a larger quantity and more diverse types of data will, in general, make it more difficult for an adversary to determine who is talking to whom. This means a safer Tor for everyone.</p>
+<h2><a id="incentives_motivation" href="#incentives_motivation">Incentives and motivation... say whuuuht?</a></h2>
+<p>There are many social and technical challenges involved with expanding the set of Tor relays. We focus here on the social issues surrounding how to encourage more people to run a relay in the first place by providing incentives (i.e., rewards) for relay operators, and later focus on how to do this without leaking information or otherwise hurting Tor’s anonymity.</p>
+<p>An important social issue to consider is that of maintaining the existing community of operators and how rewards could harm it. The presumption here is that existing relay operators are motivated to run relays for their own reasons - the act of contributing to Tor itself has intrinsic value to them. Then the question is: what would happen if we start rewarding operators through the use of an incentive system?</p>
+<p>The answer isn’t clear, and there are at least a couple of forks in the cognitive road with many more questions along the way. First, what would happen to the existing operators who used to feel good about volunteering but are now compensated with a reward that may have extrinsic value? Although the new reward may provide some extrinsic value, will it lower their original intrinsic value enough to cause them to <a href="http://www.ted.com/talks/dan_pink_on_motivation">lose their motivation</a> to contribute? Will they continue their contributions but begin to expect the reward, such that <a href="http://p2pfoundation.net/Intrinsic_vs._Extrinsic_Motivation#Why_Extrinsic_Motivation_Doesn.27t_Work">if the reward is removed later they would no longer be motivated</a> even though originally (before the reward) they were happy to contribute? Second, is the new group of operators attracted to Tor by the reward somehow less desirable than the existing group, because they don’t care as much about Tor or are more likely to stop contributions and leave the system more quickly than the existing volunteers? Is the fact that they have higher extrinsic motivation than intrinsic make them better or worse operators? Will they be less likely to incur the costs of saying "no" when people ask them to log or turn over traffic? Will they in fact be willing to sell logs if it increases their rewards? Third, how will the new group of operators affect the existing group? If their intrinsic motivation was low enough before the reward that they didn’t contribute, but high enough with the reward that they do contribute, are these new contributors going to somehow shift the "community spirit" into something that no longer has the value that it once had? Will this <a href="http://p2pfoundation.net/Crowding_Out">"crowd out" the intrinsically motivated individuals</a> and cause existing operators to leave (a <a href="http://p2pfoundation.net/Crowding_Out#Empirical_evidence_of_the_crowding_effect">widely</a> <a href="http://www.roughtype.com/?p=479">acknowledged</a> <a href="http://en.wikipedia.org/wiki/Motivation_crowding_theory">theory</a>)?</p>
+<p>The answers to these questions are not clear, though speculations abound. One response is that we will never know what will happen until we try it, but if we try it we may not like the result. Another is that if we try it and it succeeds, great; if it starts going badly, we can adapt and adjust.</p>
+<p>Researchers and other Tor community members have been interested in the Tor incentive problem because a well-designed incentive scheme has the potential to greatly improve the network (we will discuss several technical designs below). However, because of the many open social questions, it has been challenging for the Tor community to come to a consensus on the path forward. On one hand and as discussed above, many people already run Tor relays and provide valuable service, and the <a href="https://metrics.torproject.org/network.html#networksize">network</a> and <a href="https://metrics.torproject.org/network.html#bandwidth">bandwidth</a> graphs imply some amount of success in network growth. It would be tragic if the introduction of an experimental reward scheme drove away the existing participants. On the other hand, the <a href="https://metrics.torproject.org/users.html#userstats-relay-country">number of Tor clients still vastly exceeds the number of relays</a>, and Tor’s bandwidth capacity remains the limiting factor for Tor’s growth. </p>
+<h2><a id="reasoning_model" href="#reasoning_model">A simplified model of reasoning</a></h2>
+<p>If we consider that relay operators with a higher intrinsic motivation to contribute are somehow more desirable to the network and the community because they care more deeply about Tor and the social movement, then we can consider there to be a trade-off between reward value and the desirability of the operator. The lower the extrinsic reward value is, the higher the intrinsic value a potential new operator must possess in order for the total value to be high enough to motivate her to contribute. The higher the extrinsic reward value is, the lower the intrinsic value may be to still attract the new operator. Under this model, as the value of the reward increases, the number of individuals willing to contribute also increases while their "quality" decreases.</p>
+<p>Please note that this is a very simplified model of reasoning and since it does not necessarily reflect reality, not everyone should agree with it. There are many other values in play here as well; for example, motivations change over time as the world changes, and incentive schemes that require significant protocol modifications are more difficult to implement, test, and deploy. Nonetheless, this simplified model may help sort out the issues, and it seems to be consistent with the fact that the Tor community has thus far preferred to grow the network through intrinsically motivated relay operators.</p>
+<h2><a id="social_rewards" href="#social_rewards">Social rewards</a></h2>
+<p>Tor’s volunteer approach has generally been on the conservative side of our simplified model, where individuals with higher intrinsic motivations to contribute to Tor are preferred. New operators have been recruited through social and community-oriented efforts such as explaining how great Tor is and why they should care. This works well for people who are already intrinsically motivated about Tor, such as <a href="http://imgur.com/sZUKADG">this guy who tattooed a Tor onion on his arm</a>.</p>
+<p>Other relay recruitment approaches for intrinsically motivated individuals include <a href="https://www.torservers.net/">Torservers.net</a> and the <a href="https://www.noisebridge.net/wiki/Tor">Noisebridge Tor Exit Node Project</a>: both operate as independent nonprofit organizations for those people who would like to contribute to the Tor network but for one reason or another are not in a position to operate relays themselves. As discussed in a <a href="https://blog.torproject.org/blog/support-tor-network-donate-exit-node-providers">2011 post</a>, it is preferable that people who can run their own fast exit relays do so. But the approach of turning donations into fast exit capacity allows those who cannot run their own relays to still contribute to improving the performance and exit capacity of the Tor network.</p>
+<p>The more recent <a href="https://www.eff.org/torchallenge/">EFF Tor Challenge</a> is somewhere on the same side of the spectrum, except it actually offers small rewards as incentives. EFF explains Tor’s importance and users are encouraged to contribute to the network by running a relay. The challenge offers prizes to relay operators as an incentive: name and twitter handle published in a list of contributors, a limited edition sticker for running a relay for 12 months, and a t-shirt if that relay is fast (bandwidth of 1 MB/s or larger after 12 months).</p>
+<p>Other social rewards are possible here as well. A <a href="https://lists.torproject.org/pipermail/tor-dev/2014-June/006975.html">post on the tor-dev mailing list</a> proposes that Tor host a simple profile page for each relay that will list and celebrate the relay’s total bandwidth contribution over time, and recognize the operator for running special Tor bridge or exit relays. Relatively simple ideas like this may have the potential to attract intrinsically-motivated individuals without requiring extrinsic rewards or a lot of changes to Tor itself.</p>
+<p>The approaches in this category are relatively low-risk/low-reward schemes: even though the new operators are receiving recognition or a reward for running a relay, the reward is of such little value that there is little risk that existing contributors who may not have been rewarded will leave. At the same time, a new operator loses little if it decides to shut down the new relay.</p>
+<p>On the other side of the spectrum are more "radical" approaches that do not require individuals with high intrinsic motivation (though they are welcome, too!) but change Tor’s design have been explored by researchers. Researchers explore these designs because they are generally more technically interesting and have the potential to produce a much larger set of relays. We now shift to discussing these latest research proposals.</p>
+<h2><a id="research_review" href="#research_review">Review of early research on Tor incentive system designs - Gold Star and PAR</a></h2>
+<p><a href="https://blog.torproject.org/blog/two-incentive-designs-tor">The 2009 post</a> discussed two incentive papers that were new at the time: <a href="http://cs.gmu.edu/~astavrou/research/Par_PET_2008.pdf">Payment for Anonymous Routing</a> from PETS 2008 (PAR) and <a href="http://freehaven.net/anonbib/papers/incentives-fc10.pdf">Building Incentives into Tor</a> from FC 2010 (the "Gold Star" scheme).</p>
+<p>In the Gold Star scheme, the Tor directory authorities measure the bandwidth of Tor relays and assign a special flag (a "gold star") to the fastest 7/8 of relays. Then whenever those relays send traffic through Tor, they choose the other fast gold star relays to form a fast gold star path. Relays then prioritize traffic on these gold star paths. The incentive here is that if you run a relay, you will get faster service when using Tor as a client. The main drawback to this approach is that only relays are able to get gold stars and priority service. This means that all relays that are part of a gold star path know for certain that the initiator of that traffic is someone from the small list of gold star relays. Because the set of gold star relays would be smaller than the set of all Tor users by several orders of magnitude, the anonymity for gold star relays would be significantly harmed.</p>
+<p>In PAR, all users (not just relays) are able to be part of the incentive system. PAR has an honest-but-curious centralized entity called a "bank" that manages digital tokens called "coins". Users can purchase coins from the bank and then pay the relays while using Tor; the relays then deposit the coins back into the bank and the bank checks to make sure the coin is valid and that it has never been spent before (i.e., it has not been "double spent"). The main novel idea explored in this work is how to include digital payments into each Tor circuit in a way that prevents the relays from learning the client’s identity from the payment itself.</p>
+<p>Adding real money into Tor opens a host of new legal and technical questions, which <a href="https://blog.torproject.org/blog/two-incentive-designs-tor">Roger already briefly discussed</a>. For example, real money might shift Tor into a different legal category (see e.g. the EU discussions of what is a "service provider" and which ones are obliged to do data retention), or change the liability situation for relay operators.</p>
+<p>The main design challenge we learned from the PAR design is that the timing of when the client withdraws the coins and the relays deposit them creates a trade-off between the ability to detect double spending and link a client to its coins. If the client withdraws some coins and a few seconds later a relay starts depositing coins, how much information does the bank gain? If the relay waits for some time interval to deposit the coins to hide this timing information, then it becomes possible for the client to double spend those coins during that interval. The longer the relay waits before depositing, the harder it is for the bank to link the coins but the easier it is for the client to cheat. A rational relay will deposit immediately to secure its payment, which leads to the worst situation for anonymity. If we assume the relays will deposit immediately, then it is up to the client to hold coins for some random amount of time after purchasing them from the bank, to disrupt potential attempts to link withdrawals to deposits at the cost of flexibility in usage.</p>
+<p>In review, both of these proposals have anonymity problems: the Gold Star scheme because the assignment of rewards to relays is public and identifies traffic as originating from the relatively small set of clients of fast relay operators; and PAR because the timing of the withdrawal by the client and the deposit by the relay may leak information about the client’s traﬃc. In PAR, coins may be held by the client and the relay longer to disrupt this timing information, but this trades off flexibility in usage and the speed at which double spending can be detected. So what have these papers taught us? We have learned about some requirements that a Tor incentive scheme should probably fulfill: both clients and relays should be able to receive the incentive so that neither group stands out; and the timing of payments should not allow cheating and should not enable linkability. </p>
+<h2><a id="prevent_doublespend_timing" href="#prevent_doublespend_timing">Preventing double-spending without leaking timing information - BRAIDS</a></h2>
+<p><a href="http://www.robgjansen.com/publications/braids-ccs2010.pdf">Recruiting New Tor Relays with BRAIDS</a> was the followup research proposal presented at CCS in 2010. One of our goals in BRAIDS was to eliminate the trade-off between double-spending and linkability. To achieve this, we designed a new type of digital token which we called a "relay-specific ticket". Tickets were still issued by a trusted, centralized entity - the ticketmaster (we called it a "bank" in the paper, but BRAIDS was not designed to handle real money). Clients choose which relays they want to use, and receive tickets from the ticketmaster that are valid only at the chosen relays while hiding the chosen relay information from the ticketmaster (using partially-blind signatures). Clients then form a Tor circuit with the chosen relays and send the tickets to receive traffic priority (using a differentiated services scheduler). Each ticket will then provide traffic priority through the chosen relay for a specific number of bytes. Because each ticket a relay receives is only valid at that relay and no other, the relay could prevent double spending locally without contacting the ticketmaster.</p>
+<p>Another feature of BRAIDS is that tickets are distributed freely in small amount to any client that asks, but only to one client per IP address, and only once per distribution round. If the clients change their mind about which relays they want to use for a circuit, they may contact the ticketmaster to exchange their old tickets for new ones following a time schedule. The exchange process is also used by relays to turn the tickets they received from clients into new usable tickets.</p>
+<p>One main drawback to BRAIDS is that even though all users are able to get a small amount of tickets for free, relays are able to accumulate a much larger stash because they receive the free tickets AND the tickets sent to them by other clients. This means that relays stand out when using tickets to download large flows because it is less likely that a normal client would have been able to afford it. Another major drawback is that the exchange process is somewhat inefficient. Relays will exchange received tickets for new ones which they can use themselves, and clients that didn't spend their tickets (e.g., because their Tor usage was low or their chosen relays became unavailable) must exchange them or lose them. This leads to the ticketmaster exchanging all system tickets over every exchange interval. (The ticket validity interval is split into [spend, relay exchange, client exchange], so clients that don't spend in the "spend" time-frame must wait until "client exchange" time-frame to get new tickets. Increasing the interval lengths make them slightly less flexible to rapid changes. The longer the intervals, the more tickets will "pile up" for later processing by the ticketmaster.)</p>
+<p>BRAIDS showed us the power of relay-specific tickets but unveiled the scalability problems associated with a trusted, centralized entity.</p>
+<h2><a id="improving_scalability" href="#improving_scalability">Improving scalability - LIRA</a></h2>
+<p><a href="http://www.robgjansen.com/publications/lira-ndss2013.pdf">LIRA: Lightweight Incentivized Routing for Anonymity</a> was published at NDSS 2013. LIRA still uses a centralized entity to manage the incentives, but LIRA only requires incentive management for the relays (thousands) instead of for all system users (millions) like BRAIDS. The way we achieve this is through the use of a lottery system, where clients could simply guess a random number for every circuit to receive priority on that circuit (traffic is prioritized using a differentiated services scheduler as in BRAIDS) with tunable probability. The lottery is set up with special <a href="http://mit.tv/wHGsAp">cryptography magic</a> such that relays are rewarded with guaranteed winning guesses to the lottery; relays are allotted winners according to the amount of bandwidth they contributed.</p>
+<p>LIRA is more efficient and scalable than any earlier scheme. However, LIRA’s main drawback is that probabilistic guessing reduces flexibility for clients wanting to receive continuous priority over time, and creates a potential for cheating the system because it enables clients to continuously create new circuits and new guesses until a correct guess is found. Another problem is that a secure bandwidth measurement scheme is required to ensure that relays don’t receive rewards without actually contributing to Tor (this wasn't necessary in BRAIDS because the clients sent rewards (tickets) directly to the relays); secure bandwidth measurement is still an open research problem. Finally, LIRA still relies on a trusted central entity to manage the lottery.</p>
+<h2><a id="reducing_trust_requirements" href="#reducing_trust_requirements">Reducing reliance on trusted parties - TEARS</a></h2>
+<p><a href="http://www.robgjansen.com/publications/tears-hotpets2014.pdf">From Onions to Shallots: Rewarding Tor Relays with TEARS</a> will be presented at HotPETs later this week. The main goal in TEARS is to remove the reliance on a central entity to manage the incentives. The central entities in the above schemes (let’s generalize them as "banks") are referred to as "semi-trusted", because there are several ways a malicious bank could misbehave - for example, the bank could refuse service, could extort users by demanding extra fees in order to process their requests, or could "inflate" the digital currency (coins, tickets, guesses, etc.) by printing its own tokens for a profit.</p>
+<p>TEARS draws upon the decentralized Bitcoin design to address these concerns by using a <b>*publicly auditable*</b> e-cash protocol that prevents the bank from misbehaving and getting away with it. The bank in TEARS consists of a group of semi-trusted servers, such as the Tor directory servers (as opposed to Bitcoin’s distributed proof-of-work lottery), only a quorum of which need to function correctly for the overall system to keep working. The e-cash cryptography used here is publicly auditable and every interaction with the bank is conducted over a public communication channel (such as the Bitcoin blockchain itself). The security guarantee is that any form of misbehavior on the part of the bank servers leaves a trail of evidence that can be discovered by anyone watching. This approach is reminiscent of systems like <a href="http://www.certificate-transparency.org/">Certificate Transparency</a> and <a href="http://opentransactions.org">OpenTransactions.</a></p>
+<p>In addition to a decentralized bank, TEARS offers a new two-level token architecture to facilitate rewarding relays for their bandwidth contributions without hurting anonymity. First, a decentralized process audits relays’ bandwidth and informs the bank of the results. The bank mints new "shallots" (anonymous, auditable e-cash) for each relay based on their contributions and deposits them into the relay accounts on their behalf. Separately, the bank’s monetary policy may allow it to mint new shallots and distribute them to users, e.g. using mechanisms suggested in BRAIDS but more commonly known to Bitcoin users as <a href="https://en.bitcoin.it/wiki/Bitcoin_faucet">faucets</a>. Second, shallots are transferable among users and may be redeemed for relay-specific "PriorityPasses", which are then used to request traffic priority from Tor relays (again, as in BRAIDS). PriorityPasses are relay-specific so that relays can immediately and locally prevent double spending without leaking information to any other entity. This is a similar feature present in BRAIDS’ tickets. However, a novel feature of PriorityPasses is that they are non-transferable and become useless after being spent at a relay -- this reduces overhead associated with exchanges, and ensures that the process of requesting traffic priority does not harm anonymity because the act of redeeming a shallot for a PriorityPass will be unlinkable to any later transaction. There is a question of how many PriorityPasses can be spent in one circuit before it is suspicious that a client has so many, so the size of the faucets and how they distribute Shallots will play a key role in anonymity. Anonymity is also tied to how relays decide to distribute their Shallots to clients, either via a faucet or a through a third party market.</p>
+<p>TEARS was designed to operate inside the existing Tor network and thus does not significantly change the fundamentals of Tor’s design. The decentralized bank and bandwidth measurement components do not alter the way clients choose circuits. Clients and relays that want to use or support TEARS, however, would need to support new protocols for interacting with the bank and logic for handling shallots, PriorityPasses, and traffic priority.</p>
+<p>TEARS still relies on a "bandwidth measuring" component that can accurately and robustly determine when a relay has indeed contributed useful bandwidth. While the e-cash system in TEARS is designed to be publicly auditable, the existing mechanisms for bandwidth still require trusted authorities to probe. </p>
+<h2><a id="bandwidth_measurement" href="#bandwidth_measurement">Bandwidth measurement - TorCoin</a></h2>
+<p><a href="http://www.robgjansen.com/publications/torpath-hotpets2014.pdf">A TorPath to TorCoin - Proof-of-Bandwidth Altcoins for Compensating Relays</a> is the other paper to be presented at HotPETs this week. TorCoin addresses the bandwidth measurement problem with a different approach -- an altcoin (a Bitcoin alternative) based on a novel "proof-of-bandwidth" (rather than proof-of-work) mechanism called TorPath, in which the relays (and endpoints) of a circuit effectively mine for new coins whenever they successfully transfer a batch of packets. In TorCoin, a group of "assignment" authorities are responsible for generating a list of circuits (using a shuffle protocol) and assigning them to clients. Bandwidth proofs are then constructed as the circuit is used such that the client mines the TorCoin and then transfers part of it to each of the circuit’s participants.</p>
+<p>Like TEARS, TorCoin distributes the process of rewarding relays for their bandwidth contributions. Bandwidth measurement is done directly as part of the distributed mining process and provides strong guarantees. Also, by utilizing a group of assignment authorities that may have more information about the system or underlying network, there is a lot of potential for generating more secure paths for clients than clients are able to generate for themselves.</p>
+<p>TorCoin still has some issues to work out; it may be possible to fix some of the smaller issues with protocol modifications, but some of the larger issues don’t have obvious solutions.</p>
+<p>One drawback to TorCoin is that it requires the group of collectively-trusted assignment authorities (you have to trust only that some threshold/quorum number of them are correct) to generate and assign circuits to clients. This is a similar trust model to the current Tor directory authorities. In practice, the assignment authorities cause availability issues: if a majority of the assignment authorities are unreachable, e.g. due to DoS or censorship, then the system is unusable to the clients because they won’t be able to generate circuits. This is also somewhat true of the directory authorities, however, directory information can be signed and then mirrored and distributed by other relays in the system whereas assignment authorities are required to always be online and available to new clients. TorCoin clients contact the assignment authorities in order to build new circuits, whereas in Tor they can build as many circuits as they need once the directory information is retrieved (from the directory auths or from directory mirrors).</p>
+<p>TorCoin as written has significant security issues. Because relay assignment is not based on bandwidth, it is easier for an adversary to get into the first and last position on a circuit and break anonymity. This can be done through a sybil attack by adding an arbitrary number of bad relays and joining them to the network without actually providing bandwidth. Because the protocol reveals  which ephemeral keys are attached to the assigned circuits, an adversary can confirm when it has compromised a circuit (has malicious nodes in the correct positions) without needing to do any statistical correlation attack (it can match up the ephemeral keys assigned to its malicious relays to the ones posted in the circuit assignment list). </p>
+<p>The formation of relay/client groups is not discussed and is similarly vulnerable to sybil attacks where the adversary can completely subvert the coin mining process. This can be done by registering an arbitrary number of relays and clients with the assignment servers, such that a large majority of circuits created by the assignment process will contain malicious relays in all positions and be assigned to a malicious client. This malicious collective of nodes can then “pretend” to send bytes through the circuit without actually doing so, and gain an advantage when mining coins. The paper suggests to use a persistent guard, which means the adversary only needs malicious relays in the middle and exit positions of its sybil client circuits, exponentially increasing the probability of a full compromise (or requiring far fewer nodes to achieve the same probability of compromise as without persistent guards). (The sybil clients only have to get 2 of its relays in the circuit instead of 3, reducing the probability from f^3 to f^2 for malicious fraction f.) Further, even if some relays on a circuit are honest, it is not rational for them to refuse to sign proofs of bandwidth that have been exaggerated (too high) by other relays. It will only benefit a relay to ignore proof-of-bandwidth checks, giving it an advantage over completely honest nodes in the TorCoin mining process.</p>
+<p>There are a variety of unaddressed practical deployment issues as well. It is not clear how to do load balancing with TorCoin alone - no one should be able to determine how many bytes were sent by any of the circuit members or where the payments for mined coins are being sent (anonymous TorCoin transactions are necessary for anonymity). Exit policies are not discussed, and there is no clear way to support them and for a client that would like to request a specific exit port. Its not clear how to ensure that a relay is not chosen for the same circuit twice, or two relays from the same relay family are not on the same circuit. Finally, it is not clear how to link ephemeral circuit keys to TorCoin addresses so that payments may be sent from clients to relays without revealing client identity.</p>
+<p>Don't misunderstand my ranting here - I think that the TorCoin idea is great (I am a co-author after all). It has the potential to motivate new researchers and developers to start thinking about solutions to problems that Tor is interested in, particularly bandwidth measurement. However, the limitations need to be clear so that we don't start seeing production systems using it and claiming to provide security without working through <b>*at least*</b> the issues mentioned above. The current paper was an initial concept in its early stages, and I expect the system to improve significantly as it is furthered developed.</p>
+<p>(For completeness, we should also point out that TorCoin will need a new name if anybody decides to build it. The <a href="https://www.torproject.org/docs/trademark-faq#researchpapers">Tor trademark faq</a> says it's fine for research paper designs to use the Tor mark, but if it becomes actual software then it sure will be confusing to users and the rest of the Tor community about whether it's written by or endorsed by Tor.)</p>
+<p>Note that TorCoin and TEARS are at least somewhat complementary, since TEARS <b>*needs*</b> a proof-of-bandwidth scheme, and TorCoin <b>*provides*</b> one. However, they’re also not directly compatible. TorCoin requires a substantial change to both Bitcoin and to Tor (or to put it another way, it would be a system that only partially resembles Bitcoin and only partially resembles Tor). On the other hand, TEARS leaves Tor's circuit-finding mechanism intact, and the token protocol in TEARS is closer to traditional anonymous e-cash systems than to Bitcoin.</p>
+<h2><a id="better_or_worse" href="#better_or_worse">For better or for worse?</a></h2>
+<p>As outlined above, recent research has made great improvements in the area of Tor incentives. More work is needed to show the feasibility and efficiency of the decentralized approaches, and a secure bandwidth measurement scheme would help fill a critical piece missing from TEARS. Recent improvements to the way Tor schedules sockets and circuits would be necessary to correctly provide traffic priority (see <a href="https://trac.torproject.org/projects/tor/ticket/12541">#12541</a>), and then a differentiated services scheduler that is able to prioritize traffic by classes (already described in and prototyped for the BRAIDS, LIRA, and TEARS papers) would also be needed.</p>
+<p>Unfortunately, it is unclear how to make headway on the social issues. A small scale rollout of an "experimental build" to those relays who want to support new incentive features could be one way to test a new approach without committing to anything long term.</p>
+<p>One question that is often raised is: if an incentive scheme rewards relays for providing bandwidth, then won’t everyone just pick the same cheapest hosting provider and Tor will lose location diversity? This question is largely addressed in the discussion of what constitutes a useful service in the TEARS paper (the TEARS paper and appendices also gives useful commentary on many of the common problems and design decisions to make when designing an incentive scheme). Basically, it can be addressed in the monetary policy, e.g., in addition to rewarding relays for bandwidth, the bank could also assign weights that could be used to adjust the rewards based on certain flags that relays possess, or the geographic location in which they operate. This could be adjusted over time so that there would be a higher incentive to run relays in parts of the world where none exist, or to prefer exit relays over other positions, etc. Although, note that it is unclear exactly what the "correct" utility function should be and when/how it should be adjusted. Note that <a href="https://www.torservers.net/">Torservers.net</a> similarly rewards relays for location diversity (<a href="https://blog.torservers.net/20140610/reimbursement-report-2014-05.html">see here</a>).</p>
+<p>Another point to make here is that most of these approaches have nothing to do with giving out or transferring real dollars. The tokens in most of these schemes are useful only to receive traffic priority in Tor. Will there be third party markets that form around the exchange of the tokens? Sure. And they may be speculated. But at the end of the day, the tokens would still only provide prioritized traffic. Depending on the configuration of the priority scheduler, the difference between priority traffic and normal traffic may not be that extreme. It is conceivable that the tokens would not be worth nearly enough to compensate an operator for the ISP connection, much less the overhead involved with updating the software, maintaining the machine, and talking with the ISP -- and in that case we are still on the more conservative side of the social incentive discussions above.</p>
+<p>Tor has some choices to make in terms of how to grow the network and how to position the community during that growth process. I hope that this post, and the research presented herein, will at least help the community understand some of the options that are available.</p>
+<p>All the best, ~<a href="http://www.robgjansen.com">Rob</a></p>
+<p>[Thanks to Roger Dingledine, Bryan Ford, Aaron Johnson, Andrew Miller, and Paul Syverson for input and feedback on this post.]</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+
+        
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/blog/bitcoin" class="page__taxonomy-item" rel="tag">bitcoin</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/blog/incentives" class="page__taxonomy-item" rel="tag">incentives</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/blog/performance" class="page__taxonomy-item" rel="tag">performance</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/blog/tor" class="page__taxonomy-item" rel="tag">tor</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/blog/research" class="page__taxonomy-item" rel="tag">research</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+        <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Posted:</strong> <time datetime="2014-07-14T16:42:00-04:00">July 14 </time><a href="/blog/2014" class="page__taxonomy-item" rel="year">2014</a>
+        
+
+        
+      </footer>
+
+      
+
+      
+
+
+
+
+
+
+  <nav class="pagination">
+    
+      <a href="/blog/2014/05/27/paper-accepted-to-usenix-security-2014/" class="pagination--pager" title="paper accepted to USENIX Security 2014
+">Previous</a>
+    
+    
+      <a href="/blog/2014/09/14/paper-accepted-to-wpes-2014/" class="pagination--pager" title="Paper Accepted to WPES 2014
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+      
+
+
+
+
+
+<div class="page__comments">
+  
+  
+    <h4 class="page__comments-title">Leave a Comment</h4>
+    <section id="disqus_thread"></section>
+  
+</div>
+    
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        
+
+
+
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="http://github.com/robgjansen"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    <li><a href="/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2016 Rob G. Jansen. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+        <!-- start custom footer snippets -->
+<div class="page__footer-custom">
+The views and opinions expressed in this page are strictly those of the page author.
+</div>
+<!-- end custom footer snippets -->
+
+      </footer>
+    </div>
+
+    <script src="/assets/js/main.min.js"></script>
+
+
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18979348-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+
+
+  
+  <script type="text/javascript">
+  	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  	var disqus_shortname = 'robgjansen-website';
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function() {
+  		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  	})();
+
+  	/* * * DON'T EDIT BELOW THIS LINE * * */
+  	(function () {
+  		var s = document.createElement('script'); s.async = true;
+  		s.type = 'text/javascript';
+  		s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+  		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  	}());
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+  </body>
+</html>
+
