@@ -96,8 +96,10 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css"/>
 
 <meta http-equiv="cleartype" content="on">
+
     <!-- start custom head snippets -->
 
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
@@ -135,6 +137,9 @@
           
             
             <li class="masthead__menu-item"><a href="/service">Service</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="/blog">Blog</a></li>
           
         </ul>
         <ul class="hidden-links hidden"></ul>
@@ -180,7 +185,7 @@
 
   <div class="author__content">
     <h3 class="author__name">Rob G. Jansen</h3>
-    <p class="author__bio">Computer Security Research Scientist at the U.S. Naval Research Laboratory</p>
+    <p class="author__bio">Computer Security Research Scientist at the U.S. Naval Research Laboratory<br/><br/>Research interests include: distributed system security, privacy-enhancing technologies, and parallel and distributed simulation</p>
   </div>
 
   <div class="author__urls-wrapper">
@@ -195,19 +200,19 @@
       
       
       
+        <li><a href="https://scholar.google.com/citations?user=_s3Lx1oAAAAJ"><i class="fa fa-fw ai ai-google-scholar-square" aria-hidden="true"></i> Google Scholar</a></li>
+      
+      
+        <li><a href="https://github.com/robgjansen"><i class="fa fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
         <li><a href="https://twitter.com/robgjansen"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
       
       
       
       
-        <li><a href="https://www.linkedin.com/in/robgjansen"><i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></li>
       
       
-      
-      
-      
-      
-        <li><a href="https://github.com/robgjansen"><i class="fa fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
       
       
       
@@ -217,6 +222,9 @@
       
       
         <li><a href="https://www.youtube.com/user/robgjansen"><i class="fa fa-fw fa-youtube-square" aria-hidden="true"></i> YouTube</a></li>
+      
+      
+        <li><a href="https://www.linkedin.com/in/robgjansen"><i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></li>
       
       
       
@@ -268,9 +276,6 @@
 
 
 
-
-
-
     <h3 class="frontpage-recent">Recent Publications</h3><hr/>
 
 
@@ -288,27 +293,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Point Break: A Study of Bandwidth Denial-of-Service Attacks against Tor</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/pointbreak-sec2019.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     28th USENIX Security Symposium (Sec 2019)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -329,6 +323,19 @@
 
 
 
+
+
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/pointbreak-sec2019.pdf">published article</a>]
+    </span>
+
+
+    
 
 
 
@@ -355,27 +362,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">KIST: Kernel-Informed Socket Transport for Tor</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/kist-tops2018.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     ACM Transactions on Privacy and Security (TOPS 2018)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -410,14 +406,71 @@
 
 
 
-
     <div class="publication__item-content">
         Volume 22, Issue 1, Article 3 (December 2018).
     </div>
 
 
 
+    
+        
 
+    <span class="link-link">
+        [<a href="/publications/kist-tops2018.pdf">published article</a>]
+    </span>
+
+
+    
+
+
+
+
+
+    <div class="publication__item-transitions">
+    
+        <i class="fa fa-gear" aria-hidden="true"></i>
+        
+    <span class="link-title">Our work influenced deployed changes to the queuing system in Tor</span>&nbsp;
+
+
+    <span class="link-link">
+        [<a href="https://trac.torproject.org/projects/tor/ticket/12541" target="_blank">Tor ticket 12541</a>]
+    </span>
+
+
+        <br/>
+    
+        <i class="fa fa-gear" aria-hidden="true"></i>
+        
+    <span class="link-title">Our KIST implementation has been deployed in Tor</span>&nbsp;
+
+
+    <span class="link-link">
+        [<a href="https://blog.torproject.org/tor-0329-released-we-have-new-stable-series" target="_blank">Tor v0.3.2 release, 2018-01-09</a>]
+    </span>
+
+
+        
+    
+    </div>
+
+
+
+    <div class="publication__item-mentions">
+    <ul>
+    
+        <li><i class="fa fa-bookmark" aria-hidden="true"></i>
+    <span class="link-title">KIST and Tell: Tor’s New Traffic Scheduling Feature</span>&nbsp;
+
+
+    <span class="link-link">
+        [<a href="https://blog.torproject.org/kist-and-tell-tors-new-traffic-scheduling-feature" target="_blank">Tor Project blog</a>]
+    </span>
+
+</li>
+    
+    </ul>
+    </div>
 
 
 <hr/>
@@ -438,43 +491,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Understanding Tor Usage with Privacy-Preserving Measurement</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/torusage-imc2018.pdf">pdf</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/torusage-imc2018-appendix.pdf">appendix</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="https://torusage-imc2018.github.io" target="_blank">data</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     18th ACM Internet Measurement Conference (IMC 2018)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -507,6 +533,35 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/torusage-imc2018.pdf">published article</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/torusage-imc2018-appendix.pdf">extended appendices</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="https://torusage-imc2018.github.io" target="_blank">homepage - code, data, and models</a>]
+    </span>
+
+
+    
+
+
+
+
 
 
 
@@ -529,35 +584,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Privacy-Preserving Dynamic Learning of Tor Network Traffic</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/tmodel-ccs2018.pdf">pdf</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="https://tmodel-ccs2018.github.io" target="_blank">data</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     25th ACM Conference on Computer and Communication Security (CCS 2018)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -582,6 +618,43 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/tmodel-ccs2018.pdf">published article</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="https://tmodel-ccs2018.github.io" target="_blank">homepage - code, data, and models</a>]
+    </span>
+
+
+    
+
+
+
+
+
+    <div class="publication__item-transitions">
+    
+        <i class="fa fa-gear" aria-hidden="true"></i>
+        
+    <span class="link-title">Our work has transitioned to the open-source Shadow project since v1.13.0</span>&nbsp;
+
+
+    <span class="link-link">
+        [<a href="https://github.com/shadow/shadow" target="_blank">code repository</a>]
+    </span>
+
+
+        
+    
+    </div>
 
 
 
@@ -604,27 +677,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">High Performance Tor Experimentation from the Magic of Dynamic ELFs</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/shadowelf-cset2018.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     11th Workshop on Cyber Security Experimentation and Test (CSET 2018)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -649,6 +711,35 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/shadowelf-cset2018.pdf">published article</a>]
+    </span>
+
+
+    
+
+
+
+
+
+    <div class="publication__item-transitions">
+    
+        <i class="fa fa-gear" aria-hidden="true"></i>
+        
+    <span class="link-title">Our work has transitioned to the open-source Shadow project since v1.12.0</span>&nbsp;
+
+
+    <span class="link-link">
+        [<a href="https://github.com/shadow/shadow" target="_blank">code repository</a>]
+    </span>
+
+
+        
+    
+    </div>
 
 
 
@@ -681,37 +772,11 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Privacy-Preserving Dynamic Learning of Tor Network Traffic</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/talks/tmodel-ccs-20181018.pptx">pptx</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="/talks/tmodel-ccs-20181018.pdf">pdf</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="https://dcaps.info/2018-11-28.html" target="_blank">program</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
@@ -729,6 +794,36 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/talks/tmodel-ccs-20181018.pptx">pptx</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/talks/tmodel-ccs-20181018.pdf">pdf</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="https://dcaps.info/2018-11-28.html" target="_blank">program</a>]
+    </span>
+
+
+    
+
+
+
+
+
 
 
 
@@ -750,37 +845,11 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Privacy-Preserving Dynamic Learning of Tor Network Traffic</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/talks/tmodel-ccs-20181018.pptx">pptx</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="/talks/tmodel-ccs-20181018.pdf">pdf</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="https://www.sigsac.org/ccs/CCS2018/program/#tor" target="_blank">program</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
@@ -798,6 +867,44 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/talks/tmodel-ccs-20181018.pptx">pptx</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/talks/tmodel-ccs-20181018.pdf">pdf</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="https://www.sigsac.org/ccs/CCS2018/program/#tor" target="_blank">program</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="https://youtu.be/YS5GzQDDig8" target="_blank">video</a>]
+    </span>
+
+
+    
+
+
+
+
+
 
 
 
@@ -819,37 +926,11 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Shadow: Scalable and Deterministic Network Experimentation</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/talks/shadow-cef-20180515.pptx">pptx</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="/talks/shadow-cef-20180515.pdf">pdf</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="http://www.cyberexperimentation.org/cef-2018-community-events/cef-2018-community-event-2" target="_blank">program</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
@@ -867,6 +948,36 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/talks/shadow-cef-20180515.pptx">pptx</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/talks/shadow-cef-20180515.pdf">pdf</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="http://www.cyberexperimentation.org/cef-2018-community-events/cef-2018-community-event-2" target="_blank">program</a>]
+    </span>
+
+
+    
+
+
+
+
+
 
 
 
@@ -888,37 +999,11 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Inside Job: Applying Traffic Analysis to Measure Tor from Within</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/talks/insidejob-ndss-20180221.pptx">pptx</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="/talks/insidejob-ndss-20180221.pdf">pdf</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="http://dcaps.info/2018-2-26.html" target="_blank">program</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
@@ -936,6 +1021,36 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/talks/insidejob-ndss-20180221.pptx">pptx</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/talks/insidejob-ndss-20180221.pdf">pdf</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="http://dcaps.info/2018-2-26.html" target="_blank">program</a>]
+    </span>
+
+
+    
+
+
+
+
+
 
 
 
@@ -957,29 +1072,11 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Inside Job: Applying Traffic Analysis to Measure Tor From Within</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/talks/insidejob-ndss-20180221.pptx">pptx</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="/talks/insidejob-ndss-20180221.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
@@ -994,6 +1091,28 @@
     <div class="publication__item-content">
         Conference technical session, February 21, 2018
     </div>
+
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/talks/insidejob-ndss-20180221.pptx">pptx</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/talks/insidejob-ndss-20180221.pdf">pdf</a>]
+    </span>
+
+
+    
+
+
 
 
 

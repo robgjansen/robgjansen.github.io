@@ -98,8 +98,10 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css"/>
 
 <meta http-equiv="cleartype" content="on">
+
     <!-- start custom head snippets -->
 
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
@@ -137,6 +139,9 @@
           
             
             <li class="masthead__menu-item"><a href="/service">Service</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="/blog">Blog</a></li>
           
         </ul>
         <ul class="hidden-links hidden"></ul>
@@ -182,7 +187,7 @@
 
   <div class="author__content">
     <h3 class="author__name">Rob G. Jansen</h3>
-    <p class="author__bio">Computer Security Research Scientist at the U.S. Naval Research Laboratory</p>
+    <p class="author__bio">Computer Security Research Scientist at the U.S. Naval Research Laboratory<br/><br/>Research interests include: distributed system security, privacy-enhancing technologies, and parallel and distributed simulation</p>
   </div>
 
   <div class="author__urls-wrapper">
@@ -197,19 +202,19 @@
       
       
       
+        <li><a href="https://scholar.google.com/citations?user=_s3Lx1oAAAAJ"><i class="fa fa-fw ai ai-google-scholar-square" aria-hidden="true"></i> Google Scholar</a></li>
+      
+      
+        <li><a href="https://github.com/robgjansen"><i class="fa fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+      
+      
         <li><a href="https://twitter.com/robgjansen"><i class="fa fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
       
       
       
       
-        <li><a href="https://www.linkedin.com/in/robgjansen"><i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></li>
       
       
-      
-      
-      
-      
-        <li><a href="https://github.com/robgjansen"><i class="fa fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
       
       
       
@@ -219,6 +224,9 @@
       
       
         <li><a href="https://www.youtube.com/user/robgjansen"><i class="fa fa-fw fa-youtube-square" aria-hidden="true"></i> YouTube</a></li>
+      
+      
+        <li><a href="https://www.linkedin.com/in/robgjansen"><i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a></li>
       
       
       
@@ -303,27 +311,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Point Break: A Study of Bandwidth Denial-of-Service Attacks against Tor</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/pointbreak-sec2019.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     28th USENIX Security Symposium (Sec 2019)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -344,6 +341,19 @@
 
 
 
+
+
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/pointbreak-sec2019.pdf">published article</a>]
+    </span>
+
+
+    
 
 
 
@@ -369,27 +379,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">KIST: Kernel-Informed Socket Transport for Tor</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/kist-tops2018.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     ACM Transactions on Privacy and Security (TOPS 2018)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -424,14 +423,71 @@
 
 
 
-
     <div class="publication__item-content">
         Volume 22, Issue 1, Article 3 (December 2018).
     </div>
 
 
 
+    
+        
 
+    <span class="link-link">
+        [<a href="/publications/kist-tops2018.pdf">published article</a>]
+    </span>
+
+
+    
+
+
+
+
+
+    <div class="publication__item-transitions">
+    
+        <i class="fa fa-gear" aria-hidden="true"></i>
+        
+    <span class="link-title">Our work influenced deployed changes to the queuing system in Tor</span>&nbsp;
+
+
+    <span class="link-link">
+        [<a href="https://trac.torproject.org/projects/tor/ticket/12541" target="_blank">Tor ticket 12541</a>]
+    </span>
+
+
+        <br/>
+    
+        <i class="fa fa-gear" aria-hidden="true"></i>
+        
+    <span class="link-title">Our KIST implementation has been deployed in Tor</span>&nbsp;
+
+
+    <span class="link-link">
+        [<a href="https://blog.torproject.org/tor-0329-released-we-have-new-stable-series" target="_blank">Tor v0.3.2 release, 2018-01-09</a>]
+    </span>
+
+
+        
+    
+    </div>
+
+
+
+    <div class="publication__item-mentions">
+    <ul>
+    
+        <li><i class="fa fa-bookmark" aria-hidden="true"></i>
+    <span class="link-title">KIST and Tell: Tor’s New Traffic Scheduling Feature</span>&nbsp;
+
+
+    <span class="link-link">
+        [<a href="https://blog.torproject.org/kist-and-tell-tors-new-traffic-scheduling-feature" target="_blank">Tor Project blog</a>]
+    </span>
+
+</li>
+    
+    </ul>
+    </div>
 
 
 <hr/>
@@ -451,43 +507,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Understanding Tor Usage with Privacy-Preserving Measurement</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/torusage-imc2018.pdf">pdf</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/torusage-imc2018-appendix.pdf">appendix</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="https://torusage-imc2018.github.io" target="_blank">data</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     18th ACM Internet Measurement Conference (IMC 2018)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -520,6 +549,35 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/torusage-imc2018.pdf">published article</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/torusage-imc2018-appendix.pdf">extended appendices</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="https://torusage-imc2018.github.io" target="_blank">homepage - code, data, and models</a>]
+    </span>
+
+
+    
+
+
+
+
 
 
 
@@ -541,35 +599,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Privacy-Preserving Dynamic Learning of Tor Network Traffic</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/tmodel-ccs2018.pdf">pdf</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="https://tmodel-ccs2018.github.io" target="_blank">data</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     25th ACM Conference on Computer and Communication Security (CCS 2018)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -594,6 +633,43 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/tmodel-ccs2018.pdf">published article</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="https://tmodel-ccs2018.github.io" target="_blank">homepage - code, data, and models</a>]
+    </span>
+
+
+    
+
+
+
+
+
+    <div class="publication__item-transitions">
+    
+        <i class="fa fa-gear" aria-hidden="true"></i>
+        
+    <span class="link-title">Our work has transitioned to the open-source Shadow project since v1.13.0</span>&nbsp;
+
+
+    <span class="link-link">
+        [<a href="https://github.com/shadow/shadow" target="_blank">code repository</a>]
+    </span>
+
+
+        
+    
+    </div>
 
 
 
@@ -615,27 +691,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Inside Job: Applying Traffic Analysis to Measure Tor from Within</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/insidejob-ndss2018.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     25th Symposium on Network and Distributed System Security (NDSS 2018)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -668,6 +733,35 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/insidejob-ndss2018.pdf">published article</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="https://onionpop.github.io/" target="_blank">homepage</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="https://github.com/onionpop" target="_blank">code</a>]
+    </span>
+
+
+    
+
+
+
+
 
 
 
@@ -689,27 +783,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">PeerFlow: Secure Load Balancing in Tor</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/peerflow-popets2017.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     Proceedings on Privacy Enhancing Technologies (PoPETs 2017)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -740,10 +823,31 @@
 
 
 
-
     <div class="publication__item-content">
         Volume 2017, Issue 2.
     </div>
+
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/peerflow-popets2017.pdf">published article</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="https://github.com/robgjansen/tor/tree/research/peerflow/v2-squashed" target="_blank">PeerFlow Tor prototype</a>]
+    </span>
+
+
+    
+
+
 
 
 
@@ -767,35 +871,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Avoiding The Man on the Wire: Improving Tor’s Security with Trust-Aware Path Selection</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/taps-ndss2017.pdf">pdf</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="http://arxiv.org/pdf/1511.05453v3.pdf" target="_blank">tech report</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     24th Symposium on Network and Distributed System Security (NDSS 2017)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -828,6 +913,35 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/taps-ndss2017.pdf">published article</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="http://arxiv.org/pdf/1511.05453v3.pdf" target="_blank">technical report</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="https://github.com/robgjansen/tor/tree/research/taps/v1-squashed" target="_blank">TAPS Tor prototype</a>]
+    </span>
+
+
+    
+
+
+
+
 
 
 
@@ -849,35 +963,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Safely Measuring Tor</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/privcount-ccs2016.pdf">pdf</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="https://github.com/privcount" target="_blank">code</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     23rd ACM Conference on Computer and Communication Security (CCS 2016)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -898,6 +993,51 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/privcount-ccs2016.pdf">published article</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/blog/2016/10/23/introducing-privcount-for-safely-measuring-tor/">blog summary</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="https://github.com/privcount" target="_blank">code</a>]
+    </span>
+
+
+    
+
+
+
+
+
+    <div class="publication__item-transitions">
+    
+        <i class="fa fa-gear" aria-hidden="true"></i>
+        
+    <span class="link-title">Our work influenced a new privacy-preserving measurement system in Tor</span>&nbsp;
+
+
+    <span class="link-link">
+        [<a href="https://gitweb.torproject.org/torspec.git/tree/proposals/288-privcount-with-shamir.txt" target="_blank">Tor proposal 288</a>]
+    </span>
+
+
+        
+    
+    </div>
 
 
 
@@ -919,35 +1059,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Never Been KIST: Tor's Congestion Management Blossoms with Kernel-Informed Socket Transport</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/kist-sec2014.pdf">pdf</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/kist-umntr14-012.pdf">appendices</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     23rd USENIX Security Symposium (Sec 2014)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -980,6 +1101,63 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/kist-sec2014.pdf">published article</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/kist-umntr14-012.pdf">extended appendices</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="https://github.com/robgjansen/tor/tree/research/kist/v2-squashed" target="_blank">KIST prototype</a>]
+    </span>
+
+
+    
+
+
+
+
+
+    <div class="publication__item-transitions">
+    
+        <i class="fa fa-gear" aria-hidden="true"></i>
+        
+    <span class="link-title">Our work has transitioned to the open-source Shadow project since v1.9.2</span>&nbsp;
+
+
+    <span class="link-link">
+        [<a href="https://github.com/shadow/shadow" target="_blank">code repository</a>]
+    </span>
+
+
+        <br/>
+    
+        <i class="fa fa-gear" aria-hidden="true"></i>
+        
+    <span class="link-title">Our work influenced deployed changes to the queuing system in Tor</span>&nbsp;
+
+
+    <span class="link-link">
+        [<a href="https://trac.torproject.org/projects/tor/ticket/12541" target="_blank">Tor ticket 12541</a>]
+    </span>
+
+
+        
+    
+    </div>
 
 
 
@@ -1001,27 +1179,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">The Sniper Attack: Anonymously Deanonymizing and Disabling the Tor Network</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/sniper-ndss2014.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     21st Symposium on Network and Distributed System Security (NDSS 2014)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -1050,12 +1217,78 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/sniper-ndss2014.pdf">published article</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/blog/2014/01/24/new-tor-denial-of-service-attacks-and-defenses/">blog summary</a>]
+    </span>
+
+
+    
+
+
 
     <div class="publication__item-awards">
     
+        <i class="fa fa-star" aria-hidden="true"></i>
         
     <span class="link-title">47th Annual Alan Berman Research Publication Award, 2015-04-17</span>&nbsp;
 
+
+    <span class="link-link">
+        [<a href="/blog/2015/05/17/sniper-attack-won-berman-award/">blog</a>]
+    </span>
+
+
+        
+    
+    </div>
+
+
+
+    <div class="publication__item-transitions">
+    
+        <i class="fa fa-gear" aria-hidden="true"></i>
+        
+    <span class="link-title">Our work influenced deployed guard selection changes in Tor</span>&nbsp;
+
+
+    <span class="link-link">
+        [<a href="https://gitweb.torproject.org/torspec.git/tree/proposals/271-another-guard-selection.txt" target="_blank">Tor proposal 271</a>]
+    </span>
+
+
+        <br/>
+    
+        <i class="fa fa-gear" aria-hidden="true"></i>
+        
+    <span class="link-title">Our circuit killer DoS defense was deployed in Tor</span>&nbsp;
+
+
+    <span class="link-link">
+        [<a href="https://lists.torproject.org/pipermail/tor-talk/2013-December/031392.html" target="_blank">Tor v0.2.4 release, 2013-12-12</a>]
+    </span>
+
+
+        <br/>
+    
+        <i class="fa fa-gear" aria-hidden="true"></i>
+        
+    <span class="link-title">Our work influenced proposed authenticated SENDME DoS defense in Tor</span>&nbsp;
+
+
+    <span class="link-link">
+        [<a href="https://gitweb.torproject.org/torspec.git/tree/proposals/289-authenticated-sendmes.txt" target="_blank">Tor proposal 289</a>]
+    </span>
 
 
         
@@ -1082,27 +1315,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Users Get Routed: Traffic Correlation on Tor by Realistic Adversaries</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/usersrouted-ccs2013.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     20th Conference on Computer and Communications Security (CCS 2013)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -1135,14 +1357,34 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/usersrouted-ccs2013.pdf">published article</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="https://github.com/torps/torps" target="_blank">Tor path simulator</a>]
+    </span>
+
+
+    
+
+
+
+
 
 
 
     <div class="publication__item-mentions">
-    Mentions:
     <ul>
     
-        <li>- 
+        <li><i class="fa fa-bookmark" aria-hidden="true"></i>
     <span class="link-title">Building a new Tor that can resist next-generation state surveillance</span>&nbsp;
 
 
@@ -1152,7 +1394,7 @@
 
 </li>
     
-        <li>- 
+        <li><i class="fa fa-bookmark" aria-hidden="true"></i>
     <span class="link-title">Snoops can identify Tor users given enough time, experts say</span>&nbsp;
 
 
@@ -1162,7 +1404,7 @@
 
 </li>
     
-        <li>- 
+        <li><i class="fa fa-bookmark" aria-hidden="true"></i>
     <span class="link-title">Anonymity Network Tor Needs a Tune-up to Protect Users from Surveillance</span>&nbsp;
 
 
@@ -1172,7 +1414,7 @@
 
 </li>
     
-        <li>- 
+        <li><i class="fa fa-bookmark" aria-hidden="true"></i>
     <span class="link-title">Boffins follow TOR breadcrumbs to identify users</span>&nbsp;
 
 
@@ -1182,7 +1424,7 @@
 
 </li>
     
-        <li>- 
+        <li><i class="fa fa-bookmark" aria-hidden="true"></i>
     <span class="link-title">Tor is Not as Safe as You May Think</span>&nbsp;
 
 
@@ -1192,7 +1434,7 @@
 
 </li>
     
-        <li>- 
+        <li><i class="fa fa-bookmark" aria-hidden="true"></i>
     <span class="link-title">Tor Is Less Anonymous Than You Think</span>&nbsp;
 
 
@@ -1202,7 +1444,7 @@
 
 </li>
     
-        <li>- 
+        <li><i class="fa fa-bookmark" aria-hidden="true"></i>
     <span class="link-title">Persistent adversaries can identify Tor users</span>&nbsp;
 
 
@@ -1212,7 +1454,7 @@
 
 </li>
     
-        <li>- 
+        <li><i class="fa fa-bookmark" aria-hidden="true"></i>
     <span class="link-title">Anonymity-based Tor platform has security issues according to report</span>&nbsp;
 
 
@@ -1222,7 +1464,7 @@
 
 </li>
     
-        <li>- 
+        <li><i class="fa fa-bookmark" aria-hidden="true"></i>
     <span class="link-title">Tor users easy to unmask</span>&nbsp;
 
 
@@ -1232,7 +1474,7 @@
 
 </li>
     
-        <li>- 
+        <li><i class="fa fa-bookmark" aria-hidden="true"></i>
     <span class="link-title">The anonymity of the Tor network shaken by US researchers</span>&nbsp;
 
 
@@ -1242,7 +1484,7 @@
 
 </li>
     
-        <li>- 
+        <li><i class="fa fa-bookmark" aria-hidden="true"></i>
     <span class="link-title">Tor anonymity not guaranteed</span>&nbsp;
 
 
@@ -1252,7 +1494,7 @@
 
 </li>
     
-        <li>- 
+        <li><i class="fa fa-bookmark" aria-hidden="true"></i>
     <span class="link-title">Identity Tor users yet to figure out</span>&nbsp;
 
 
@@ -1283,27 +1525,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">LIRA: Lightweight Incentivized Routing for Anonymity</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/lira-ndss2013.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     20th Symposium on Network and Distributed System Security (NDSS 2013)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -1328,6 +1559,35 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/lira-ndss2013.pdf">published article</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/blog/2014/07/14/tor-incentives-research-roundup/#improving_scalability">blog summary</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="https://github.com/robgjansen/tor/tree/research/lira/v1-squashed" target="_blank">LIRA prototype for Tor</a>]
+    </span>
+
+
+    
+
+
+
+
 
 
 
@@ -1349,35 +1609,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Throttling Tor Bandwidth Parasites</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/throttling-sec2012.pdf">pdf</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/throttling-umntr11-019.pdf">tech report</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     21st USENIX Security Symposium (Sec 2012)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -1402,6 +1643,51 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/throttling-sec2012.pdf">published article</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/throttling-umntr11-019.pdf">technical report</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="https://github.com/robgjansen/tor/tree/research/throttling/bitsplit" target="_blank">bitsplit code</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="https://github.com/robgjansen/tor/tree/research/throttling/threshold" target="_blank">threshold code</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="https://github.com/robgjansen/tor/tree/research/throttling/flag" target="_blank">flag code</a>]
+    </span>
+
+
+    
+
+
+
+
 
 
 
@@ -1423,51 +1709,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Shadow: Running Tor in a Box for Accurate and Efficient Experimentation</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/shadow-ndss2012.pdf">pdf</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/shadow-umntr11-020.pdf">tech report</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="https://shadow.github.io" target="_blank">website</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="https://github.com/shadow" target="_blank">code</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     19th Symposium on Network and Distributed System Security (NDSS 2012)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -1488,15 +1739,53 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/shadow-ndss2012.pdf">published article</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/shadow-umntr11-020.pdf">technical report</a>]
+    </span>
+
+
+    
+
+
 
     <div class="publication__item-awards">
     
+        <i class="fa fa-star" aria-hidden="true"></i>
         
     <span class="link-title">2013 PET Award Runner Up</span>&nbsp;
 
 
     <span class="link-link">
         [<a href="http://petsymposium.org/2013/award/" target="_blank">announcement</a>]
+    </span>
+
+
+        
+    
+    </div>
+
+
+
+    <div class="publication__item-transitions">
+    
+        <i class="fa fa-gear" aria-hidden="true"></i>
+        
+    <span class="link-title">Our work has transitioned to the open-source Shadow project</span>&nbsp;
+
+
+    <span class="link-link">
+        [<a href="https://shadow.github.io/" target="_blank">Shadow homepage</a>]
     </span>
 
 
@@ -1524,27 +1813,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Recruiting New Tor Relays with BRAIDS</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/braids-ccs2010.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     17th Conference on Computer and Communications Security (CCS 2010)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -1569,6 +1847,35 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/braids-ccs2010.pdf">published article</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/blog/2014/07/14/tor-incentives-research-roundup/#prevent_doublespend_timing">blog summary</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="https://github.com/robgjansen/braids-tor-simulator" target="_blank">BRAIDS prototype</a>]
+    </span>
+
+
+    
+
+
+
+
 
 
 
@@ -1590,27 +1897,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Membership-Concealing Overlay Networks</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/mcon-ccs2009.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     16th Conference on Computer and Communications Security (CCS 2009)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -1639,6 +1935,19 @@
 
 
 
+
+
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/mcon-ccs2009.pdf">published article</a>]
+    </span>
+
+
+    
 
 
 
@@ -1676,27 +1985,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">High Performance Tor Experimentation from the Magic of Dynamic ELFs</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/shadowelf-cset2018.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     11th Workshop on Cyber Security Experimentation and Test (CSET 2018)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -1721,6 +2019,35 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/shadowelf-cset2018.pdf">published article</a>]
+    </span>
+
+
+    
+
+
+
+
+
+    <div class="publication__item-transitions">
+    
+        <i class="fa fa-gear" aria-hidden="true"></i>
+        
+    <span class="link-title">Our work has transitioned to the open-source Shadow project since v1.12.0</span>&nbsp;
+
+
+    <span class="link-link">
+        [<a href="https://github.com/shadow/shadow" target="_blank">code repository</a>]
+    </span>
+
+
+        
+    
+    </div>
 
 
 
@@ -1742,35 +2069,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Shadow-Bitcoin: Scalable Simulation via Direct Execution of Multi-threaded Applications</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/shadowbitcoin-cset2015.pdf">pdf</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="https://github.com/shadow/shadow-plugin-bitcoin" target="_blank">code</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     8th Workshop on Cyber Security Experimentation and Test (CSET 2015)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -1791,6 +2099,43 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/shadowbitcoin-cset2015.pdf">published article</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="https://github.com/shadow/shadow-plugin-bitcoin" target="_blank">code</a>]
+    </span>
+
+
+    
+
+
+
+
+
+    <div class="publication__item-transitions">
+    
+        <i class="fa fa-gear" aria-hidden="true"></i>
+        
+    <span class="link-title">Our work has transitioned to the open-source Shadow project since v1.11.0</span>&nbsp;
+
+
+    <span class="link-link">
+        [<a href="https://github.com/shadow/shadow" target="_blank">code repository</a>]
+    </span>
+
+
+        
+    
+    </div>
 
 
 
@@ -1812,27 +2157,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">IMUX: Managing Tor Connections from Two to Infinity, and Beyond</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/imux-wpes2014.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     13th Workshop on Privacy in the Electronic Society (WPES 2014)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -1857,6 +2191,19 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/imux-wpes2014.pdf">published article</a>]
+    </span>
+
+
+    
+
+
+
+
 
 
 
@@ -1878,27 +2225,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">From Onions to Shallots: Rewarding Tor Relays with TEARS</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/tears-hotpets2014.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     7th Workshop on Hot Topics in Privacy Enhancing Technologies (HotPETs 2014)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -1927,6 +2263,27 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/tears-hotpets2014.pdf">published article</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/blog/2014/07/14/tor-incentives-research-roundup/#reducing_trust_requirements">blog summary</a>]
+    </span>
+
+
+    
+
+
+
+
 
 
 
@@ -1948,27 +2305,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">A TorPath to TorCoin: Proof-of-Bandwidth Altcoins for Compensating Relays</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/torpath-hotpets2014.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     7th Workshop on Hot Topics in Privacy Enhancing Technologies (HotPETs 2014)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -1997,14 +2343,34 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/torpath-hotpets2014.pdf">published article</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/blog/2014/07/14/tor-incentives-research-roundup/#bandwidth_measurement">blog summary</a>]
+    </span>
+
+
+    
+
+
+
+
 
 
 
     <div class="publication__item-mentions">
-    Mentions:
     <ul>
     
-        <li>- 
+        <li><i class="fa fa-bookmark" aria-hidden="true"></i>
     <span class="link-title">How Bitcoin Tech Could Make Infamous Anonymous Tor Network More Powerful</span>&nbsp;
 
 
@@ -2014,7 +2380,7 @@
 
 </li>
     
-        <li>- 
+        <li><i class="fa fa-bookmark" aria-hidden="true"></i>
     <span class="link-title">Torcoin: New Altcoin Hopes To Incentivize People Into Running Tor Relays</span>&nbsp;
 
 
@@ -2024,7 +2390,7 @@
 
 </li>
     
-        <li>- 
+        <li><i class="fa fa-bookmark" aria-hidden="true"></i>
     <span class="link-title">TorCoin: Making Anonymity Pay</span>&nbsp;
 
 
@@ -2055,27 +2421,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">How Low Can You Go: Balancing Performance with Anonymity in Tor</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/howlow-pets2013.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     13th Privacy Enhancing Technologies Symposium (PETS 2013)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -2100,9 +2455,21 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/howlow-pets2013.pdf">published article</a>]
+    </span>
+
+
+    
+
+
 
     <div class="publication__item-awards">
     
+        <i class="fa fa-star" aria-hidden="true"></i>
         
     <span class="link-title">Andreas Pfitzmann Best Student Paper Award</span>&nbsp;
 
@@ -2115,6 +2482,8 @@
         
     
     </div>
+
+
 
 
 
@@ -2136,43 +2505,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Methodically Modeling the Tor Network</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/tormodel-cset2012.pdf">pdf</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/tormodel_shadow.tar.gz">Shadow files</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/tormodel_exptor.tar.gz">ExperimenTor files</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     5th Workshop on Cyber Security Experimentation and Test (CSET 2012)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -2201,6 +2543,43 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/tormodel-cset2012.pdf">published article</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/tormodel_shadow.tar.gz">Shadow models</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/tormodel_exptor.tar.gz">ExperimenTor models</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="https://github.com/shadow/shadow-plugin-tor" target="_blank">code</a>]
+    </span>
+
+
+    
+
+
+
+
 
 
 
@@ -2222,35 +2601,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Toward Anonymity in Delay Tolerant Networks: Threshold Pivot Scheme</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/tps-milcom2010.pdf">pdf</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/tps-bbntr8513.pdf">tech report</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     29th Military Communications Conference (MILCOM 2010)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -2267,6 +2627,35 @@
 
 
 
+
+
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/tps-milcom2010.pdf">published article</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/tps-bbntr8513.pdf">technical report</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="https://github.com/robgjansen/tps-one-simulator" target="_blank">prototype</a>]
+    </span>
+
+
+    
 
 
 
@@ -2304,27 +2693,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">A Wide-Area Testbed for Tor</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/tortestbed-hotpets2017.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     10th Workshop on Hot Topics in Privacy Enhancing Technologies (HotPETs 2017)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -2359,10 +2737,23 @@
 
 
 
-
     <div class="publication__item-content">
         Presentation Abstract
     </div>
+
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/tortestbed-hotpets2017.pdf">published abstract</a>]
+    </span>
+
+
+    
+
+
 
 
 
@@ -2386,27 +2777,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Fingerprinting Hidden Service Circuits from a Tor Middle Relay</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/middlefp-s&p2017.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     38th Symposium on Security and Privacy (S&P 2017)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -2441,10 +2821,23 @@
 
 
 
-
     <div class="publication__item-content">
         Poster Abstract
     </div>
+
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/middlefp-s&p2017.pdf">published abstract</a>]
+    </span>
+
+
+    
+
+
 
 
 
@@ -2468,27 +2861,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Onions for Sale: Putting Privacy on the Market</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/onionsforsale-fc2013.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     17th Conference on Financial Cryptography and Data Security (FC 2013)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -2511,10 +2893,23 @@
 
 
 
-
     <div class="publication__item-content">
         Poster Abstract
     </div>
+
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/onionsforsale-fc2013.pdf">published abstract</a>]
+    </span>
+
+
+    
+
+
 
 
 
@@ -2538,35 +2933,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Throttling Tor Bandwidth Parasites</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/throttling-ndss2012-invitedabstract.pdf">pdf</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/throttling-umntr11-019.pdf">tech report</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     19th Symposium on Network and Distributed System Security (NDSS 2012)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -2589,10 +2965,31 @@
 
 
 
-
     <div class="publication__item-content">
         Chair’s Invited Session
     </div>
+
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/throttling-ndss2012-invitedabstract.pdf">published abstract</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/throttling-umntr11-019.pdf">technical report</a>]
+    </span>
+
+
+    
+
+
 
 
 
@@ -2628,35 +3025,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Tor's Been KIST: A Case Study of Transitioning Tor Research to Practice</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/kistdeploy-arxiv2017.pdf">pdf</a>]
-    </span>
-
-
-        
-            
-
-    <span class="link-link">
-        [<a href="https://arxiv.org/pdf/1709.01044.pdf" target="_blank">pdf (arXiv)</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     Technical Report arXiv:1709.01044 [cs.CR] (arXiv 2017)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -2677,6 +3055,27 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/kistdeploy-arxiv2017.pdf">technical article</a>]
+    </span>
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="https://arxiv.org/pdf/1709.01044.pdf" target="_blank">technical article (arXiv)</a>]
+    </span>
+
+
+    
+
+
+
+
 
 
 
@@ -2698,27 +3097,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">WPES 2015: The 14th Workshop on Privacy in the Electronic Society</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/chairsummary-wpes2015.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     14th Workshop on Privacy in the Electronic Society (CCS 2015)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -2737,10 +3125,23 @@
 
 
 
-
     <div class="publication__item-content">
         Workshop Summary
     </div>
+
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/chairsummary-wpes2015.pdf">technical article</a>]
+    </span>
+
+
+    
+
+
 
 
 
@@ -2764,27 +3165,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">Privacy Preserving Performance Enhancements for Anonymous Communication Systems</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/jansen-phd-dissertation.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     University of Minnesota Ph.D. Dissertation (2012)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -2801,6 +3191,19 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/jansen-phd-dissertation.pdf">technical article</a>]
+    </span>
+
+
+    
+
+
+
+
 
 
 
@@ -2822,27 +3225,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">On PAR for Attack</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/par-csci5471.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     Class Project (2009)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -2871,6 +3263,19 @@
 
 
 
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/par-csci5471.pdf">technical article</a>]
+    </span>
+
+
+    
+
+
+
+
 
 
 
@@ -2892,27 +3297,16 @@
 
 
 
+
 <div class="publication__item">
 
 <div class="publication__item-heading">
     <span class="title">A Priori Trust Vulnerabilities in EigenTrust</span>
-    
-        
-            
-
-    <span class="link-link">
-        [<a href="/publications/fet-csci5271.pdf">pdf</a>]
-    </span>
-
-
-        
-    
 </div>
 
 <div class="publication__item-event">
     Class Project (2008)
 </div>
-
 
 
     <div class="publication__item-authors">
@@ -2941,6 +3335,19 @@
 
 
 
+
+
+
+
+    
+        
+
+    <span class="link-link">
+        [<a href="/publications/fet-csci5271.pdf">technical article</a>]
+    </span>
+
+
+    
 
 
 
