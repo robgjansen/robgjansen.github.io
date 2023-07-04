@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Favicon code from realfavicongenerator.net -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/fav/favicon-16x16.png">
+<link rel="manifest" href="/assets/fav/site.webmanifest">
+<link rel="mask-icon" href="/assets/fav/safari-pinned-tab.svg" color="#003166">
+<meta name="msapplication-TileColor" content="#001e3d">
+<meta name="theme-color" content="#ffffff">
+
+  <!--jQuery-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+  <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>FlashFlow: A Secure Speed Test for Tor | robgjansen.com</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="FlashFlow: A Secure Speed Test for Tor" />
+<meta name="author" content="Rob G. Jansen (robgjansen)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This site presents a summary of my scholarly activity and an archive of my research outputs." />
+<meta property="og:description" content="This site presents a summary of my scholarly activity and an archive of my research outputs." />
+<meta property="og:site_name" content="robgjansen.com" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="FlashFlow: A Secure Speed Test for Tor" />
+<meta name="twitter:site" content="@robgjansen" />
+<meta name="twitter:creator" content="@Rob G. Jansen (robgjansen)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Rob G. Jansen (robgjansen)"},"description":"This site presents a summary of my scholarly activity and an archive of my research outputs.","headline":"FlashFlow: A Secure Speed Test for Tor","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/rob3.jpg"},"name":"Rob G. Jansen (robgjansen)"},"url":"/publications/flashflow-icdcs2021.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<!--jQuery-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<body>
+    
+
+
+<section id="header-nav">
+<header>
+    <nav>
+    <ul>
+        
+        <a href="/">
+        <li class="btn-nav">Home</li>
+        </a>
+        
+        <a href="/publications">
+        <li class="current btn-nav">Publications</li>
+        </a>
+        
+        
+        <a href="/presentations">
+            <li class="btn-nav">Presentations</li>
+        </a>
+        
+        
+        <a href="/service">
+            <li class="btn-nav">Service</li>
+        </a>
+        
+        
+        <a href="/blog">
+            <li class="btn-nav">Blog</li>
+        </a>
+        
+        
+        <!-- presentations -->
+        
+    </ul>
+    </nav>
+</header>
+</section>
+
+
+
+
+<section id="about-me">
+  <div class="row">
+    <div class="img-wrap col-12 col-md-4">
+      <div class="img">
+        <img src="/assets/img/rob3.jpg" alt="user_image">
+      </div>
+    </div>
+    <div class="text-wrap col-12 col-md-8">
+      <h2 class="username">Rob G. Jansen, PhD</h2>
+      <div class="description"><p>Computer Scientist, Researcher, and Principal Investigator<br />U.S. Naval Research Laboratory, Washington, DC, USA</p>
+</div>
+
+      <ul id="icons">
+        
+
+<li>
+  <a href="mailto:%72%6F%62.%67.%6A%61%6E%73%65%6E@%6E%72%6C.%6E%61%76%79.%6D%69%6C" target="_blank" title="Email">
+    <i class="fas fa-envelope"></i>
+  </a>
+</li>
+
+
+
+<li>
+  <a href="https://orcid.org/0000-0002-4406-997X" title="ORCID">
+    <i class="ai ai-orcid"></i>
+  </a>
+</li>
+
+
+
+<li>
+  <a href="https://scholar.google.com/citations?user=_s3Lx1oAAAAJ" title="Google Scholar">
+    <i class="ai ai-google-scholar"></i>
+  </a>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a href="https://dblp.org/pid/14/7561.html/" title="DBLP">
+    <i class="ai ai-dblp"></i>
+  </a>
+</li>
+
+
+
+
+
+<li>
+  <a href="https://www.linkedin.com/in/robgjansen" title="Linkedin">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</li>
+
+
+
+<li>
+  <a href="https://github.com/robgjansen" title="Github">
+    <i class="fab fa-github"></i>
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a rel="me" href="https://discuss.systems/@robgjansen" title="Mastodon">
+    <i class="fab fa-mastodon"></i>
+  </a>
+</li>
+
+
+
+<li>
+  <a href="https://twitter.com/robgjansen" title="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+</li>
+
+
+
+<li>
+  <a href="https://www.youtube.com/user/robgjansen" title="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+</li>
+
+
+
+
+
+      </ul>
+    </div>
+  </div>
+  <div class="bg"></div>
+</section>
+
+
+<div class="container-fluid">
+  <div id="details">
+  <h1 class="title">Publication Details</h1>
+  
+  <ol class="bibliography"><li><!-- Entry bib key -->
+<div id="flashflow-icdcs2021">
+  
+  <!-- Main publication citation -->
+  <section class="citation">
+    <h3>Citation</h3>
+    
+  <!-- Author -->
+  <div class="author"><a href="https://matt.traudt.xyz" rel="noopener noreferrer" title="Visit coauthor's website">Matthew Traudt</a>,&nbsp;
+            <em>Rob Jansen</em>,&nbsp;and <a href="https://www.ohmygodel.com" rel="noopener noreferrer" title="Visit coauthor's website">Aaron Johnson</a>:
+            
+  </div>
+
+  <!-- Journal/Book title and date -->
+  
+
+  <div><span class="title">FlashFlow: A Secure Speed Test for Tor.</span>
+
+    <span class="venue">
+      <a href="https://icdcs2021.us" rel="noopener noreferrer" title="Visit venue's website">International Conference on Distributed Computing Systems, 2021</a>.</span></div>
+  </section>
+
+  
+
+  <!-- author buttons -->
+  
+    
+  
+  <section class="author_buttons">
+    <h3>Author Links</h3>
+    
+    <ol class="link-list">
+      <li>
+        <a href="/publications/flashflow-icdcs2021.pdf" role="button" title="PDF">
+          <i class="fas fa-file-pdf"></i>PDF
+        </a>
+      </li>
+      <li>
+        <a href="https://gitlab.torproject.org/pastly/flashflow" role="button" title="Code">
+          <i class="fas fa-code"></i>Code
+        </a>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1109/ICDCS51616.2021.00044" role="button" title="DOI">
+          <i class="ai ai-doi"></i>DOI
+        </a>
+      </li>
+      <li>
+        <a href="https://arxiv.org/abs/2004.09583" role="button" title="arXiv">
+          <i class="ai ai-arxiv"></i>arXiv
+        </a>
+      </li>
+    
+    </ol>
+  </section>
+    
+  <!-- venue buttons -->
+  
+    
+  
+  <section class="venue_buttons">
+    <h3>Venue Links</h3>
+    
+    <ol class="link-list">
+      <li>
+        <a href="https://icdcs2021.us" role="button" title="Venue Website">
+          <i class="fas fa-globe"></i>Website
+        </a>
+      </li>
+    
+    </ol>
+  </section>
+    
+  <!-- awards -->
+  
+    
+  
+    
+  <!-- transitions -->
+  
+    
+  
+  <section class="transitions">
+    <h3>Transitions</h3>
+    
+      <i class="fas fa-cog"></i> Our work lead to the development of <a href="https://gitweb.torproject.org/torspec.git/tree/proposals/316-flashflow.md">the FlashFlow Tor proposal 316</a> <br/>
+    
+  </section>
+    
+  <!-- media mentions -->
+  
+  
+  
+
+  <!-- Abstract -->
+  
+  <section class="abs">
+    <h3>Abstract</h3>
+    <p>The Tor network uses a measurement system called TorFlow to estimate its relays’ forwarding capacity and to balance traffic among them. This system has been shown to be vulnerable to adversarial manipulation, and inaccuracies even in benign circumstances have long been observed. To solve the issues with security and accuracy, we present FlashFlow, a system to measure the capacity of Tor relays. Our analysis shows that FlashFlow limits a malicious relay to obtaining a capacity estimate at most 1.33 times its true capacity. Through realistic Internet experiments, we find that FlashFlow measures relay capacity with ≥89% accuracy 95% of the time. Through simulation, we find that FlashFlow can measure the entire Tor network in less than 5 hours using 3 measurers with 1 Gbit/s of bandwidth each. Performance simulations using FlashFlow for load balancing shows that, compared to TorFlow, network weight error decreases by 86%, while the median of 50 KiB, 1 MiB, and 5 MiB transfer times decreases by 15%, 29%, and 37%, respectively. Moreover, FlashFlow yields more consistent client performance: the median rate of transfer timeouts decreases by 100%, while the standard deviation of 50 KiB, 1 MiB, and 5 MiB transfer times decreases by 55%, 61%, and 41%, respectively. We also find that the performance improvements increase relative to TorFlow as the total client-traffic load increases, demonstrating that FlashFlow is better suited to supporting network growth.</p>
+  </section>
+  
+
+  <!-- Bibtex entry -->
+  
+  <section class="bibtex">
+    <h3>Bibtex</h3>
+    <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">flashflow-icdcs2021</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{FlashFlow: A Secure Speed Test for Tor}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Traudt, Matthew and Jansen, Rob and Johnson, Aaron}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{International Conference on Distributed Computing Systems}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1109/ICDCS51616.2021.00044}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+  </section>
+  
+</div>
+</li></ol>
+</div>
+</div>
+<footer>
+  <div class="footer">
+    Copyright © 2023
+    <a href="https://www.robgjansen.com">Rob G. Jansen</a>. 
+    Last modified Jul 4th, 2023.
+    <br/>
+    Powered by
+    <a href="https://jekyllrb.com">Jekyll</a>
+    with
+    <a href="https://github.com/chrjabs/Grape-Academic-Theme">Grape Academic Theme</a>.
+    <br/>
+    The views and opinions expressed in this page are strictly those of the page author.
+  </div>
+</footer>
+
+</body>
+</html>

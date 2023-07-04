@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Favicon code from realfavicongenerator.net -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/fav/favicon-16x16.png">
+<link rel="manifest" href="/assets/fav/site.webmanifest">
+<link rel="mask-icon" href="/assets/fav/safari-pinned-tab.svg" color="#003166">
+<meta name="msapplication-TileColor" content="#001e3d">
+<meta name="theme-color" content="#ffffff">
+
+  <!--jQuery-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+  <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The Sniper Attack: Anonymously Deanonymizing and Disabling the Tor Network | robgjansen.com</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="The Sniper Attack: Anonymously Deanonymizing and Disabling the Tor Network" />
+<meta name="author" content="Rob G. Jansen (robgjansen)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This site presents a summary of my scholarly activity and an archive of my research outputs." />
+<meta property="og:description" content="This site presents a summary of my scholarly activity and an archive of my research outputs." />
+<meta property="og:site_name" content="robgjansen.com" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The Sniper Attack: Anonymously Deanonymizing and Disabling the Tor Network" />
+<meta name="twitter:site" content="@robgjansen" />
+<meta name="twitter:creator" content="@Rob G. Jansen (robgjansen)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Rob G. Jansen (robgjansen)"},"description":"This site presents a summary of my scholarly activity and an archive of my research outputs.","headline":"The Sniper Attack: Anonymously Deanonymizing and Disabling the Tor Network","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/rob3.jpg"},"name":"Rob G. Jansen (robgjansen)"},"url":"/publications/sniper-ndss2014.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<!--jQuery-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<body>
+    
+
+
+<section id="header-nav">
+<header>
+    <nav>
+    <ul>
+        
+        <a href="/">
+        <li class="btn-nav">Home</li>
+        </a>
+        
+        <a href="/publications">
+        <li class="current btn-nav">Publications</li>
+        </a>
+        
+        
+        <a href="/presentations">
+            <li class="btn-nav">Presentations</li>
+        </a>
+        
+        
+        <a href="/service">
+            <li class="btn-nav">Service</li>
+        </a>
+        
+        
+        <a href="/blog">
+            <li class="btn-nav">Blog</li>
+        </a>
+        
+        
+        <!-- presentations -->
+        
+    </ul>
+    </nav>
+</header>
+</section>
+
+
+
+
+<section id="about-me">
+  <div class="row">
+    <div class="img-wrap col-12 col-md-4">
+      <div class="img">
+        <img src="/assets/img/rob3.jpg" alt="user_image">
+      </div>
+    </div>
+    <div class="text-wrap col-12 col-md-8">
+      <h2 class="username">Rob G. Jansen, PhD</h2>
+      <div class="description"><p>Computer Scientist, Researcher, and Principal Investigator<br />U.S. Naval Research Laboratory, Washington, DC, USA</p>
+</div>
+
+      <ul id="icons">
+        
+
+<li>
+  <a href="mailto:%72%6F%62.%67.%6A%61%6E%73%65%6E@%6E%72%6C.%6E%61%76%79.%6D%69%6C" target="_blank" title="Email">
+    <i class="fas fa-envelope"></i>
+  </a>
+</li>
+
+
+
+<li>
+  <a href="https://orcid.org/0000-0002-4406-997X" title="ORCID">
+    <i class="ai ai-orcid"></i>
+  </a>
+</li>
+
+
+
+<li>
+  <a href="https://scholar.google.com/citations?user=_s3Lx1oAAAAJ" title="Google Scholar">
+    <i class="ai ai-google-scholar"></i>
+  </a>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a href="https://dblp.org/pid/14/7561.html/" title="DBLP">
+    <i class="ai ai-dblp"></i>
+  </a>
+</li>
+
+
+
+
+
+<li>
+  <a href="https://www.linkedin.com/in/robgjansen" title="Linkedin">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</li>
+
+
+
+<li>
+  <a href="https://github.com/robgjansen" title="Github">
+    <i class="fab fa-github"></i>
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a rel="me" href="https://discuss.systems/@robgjansen" title="Mastodon">
+    <i class="fab fa-mastodon"></i>
+  </a>
+</li>
+
+
+
+<li>
+  <a href="https://twitter.com/robgjansen" title="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+</li>
+
+
+
+<li>
+  <a href="https://www.youtube.com/user/robgjansen" title="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+</li>
+
+
+
+
+
+      </ul>
+    </div>
+  </div>
+  <div class="bg"></div>
+</section>
+
+
+<div class="container-fluid">
+  <div id="details">
+  <h1 class="title">Publication Details</h1>
+  
+  <ol class="bibliography"><li><!-- Entry bib key -->
+<div id="sniper-ndss2014">
+  
+  <!-- Main publication citation -->
+  <section class="citation">
+    <h3>Citation</h3>
+    
+  <!-- Author -->
+  <div class="author">
+            <em>Rob Jansen</em>,&nbsp;<a href="https://www.tu.berlin/en/dsi/team/florian-tschorsch" rel="noopener noreferrer" title="Visit coauthor's website">Florian Tschorsch</a>,&nbsp;<a href="https://www.ohmygodel.com" rel="noopener noreferrer" title="Visit coauthor's website">Aaron Johnson</a>,&nbsp;and <a href="https://www.informatik.hu-berlin.de/de/Members/scheuerb" rel="noopener noreferrer" title="Visit coauthor's website">Bj&ouml;rn Scheuermann</a>:
+            
+  </div>
+
+  <!-- Journal/Book title and date -->
+  
+
+  <div><span class="title">The Sniper Attack: Anonymously Deanonymizing and Disabling the Tor Network.</span>
+
+    <span class="venue">
+      <a href="https://www.ndss-symposium.org/ndss2014/" rel="noopener noreferrer" title="Visit venue's website">Network and Distributed System Security Symposium, 2014</a>.</span></div>
+  </section>
+
+  
+
+  <!-- author buttons -->
+  
+    
+  
+  <section class="author_buttons">
+    <h3>Author Links</h3>
+    
+    <ol class="link-list">
+      <li>
+        <a href="/publications/sniper-ndss2014.pdf" role="button" title="PDF">
+          <i class="fas fa-file-pdf"></i>PDF
+        </a>
+      </li>
+      <li>
+        <a href="sniper-ndss-20140225.pdf" role="button" title="Slides PDF">
+          <i class="fas fa-chalkboard-teacher"></i>Slides PDF
+        </a>
+      </li>
+      <li>
+        <a href="sniper-ndss-20140225.pptx" role="button" title="Slides PPTX">
+          <i class="fas fa-chalkboard-teacher"></i>Slides PPTX
+        </a>
+      </li>
+      <li>
+        <a href="https://doi.org/10.14722/ndss.2014.23288" role="button" title="DOI">
+          <i class="ai ai-doi"></i>DOI
+        </a>
+      </li>
+      <li>
+        <a href="/blog/2014/01/24/new-tor-denial-of-service-attacks-and-defenses/" role="button" title="Blog">
+          <i class="fas fa-blog"></i>Blog
+        </a>
+      </li>
+    
+    </ol>
+  </section>
+    
+  <!-- venue buttons -->
+  
+    
+  
+  <section class="venue_buttons">
+    <h3>Venue Links</h3>
+    
+    <ol class="link-list">
+      <li>
+        <a href="https://www.ndss-symposium.org/ndss2014/" role="button" title="Venue Website">
+          <i class="fas fa-globe"></i>Website
+        </a>
+      </li>
+      <li>
+        <a href="https://www.ndss-symposium.org/ndss2014/programme/sniper-attack-anonymously-deanonymizing-and-disabling-tor-network/" role="button" title="Venue URL">
+          <i class="fas fa-link"></i>URL
+        </a>
+      </li>
+      <li>
+        <a href="https://www.ndss-symposium.org/wp-content/uploads/2017/09/05_4_0.pdf", role="button" title="Venue PDF">
+          <i class="fas fa-file-pdf"></i>PDF
+        </a>
+      </li>
+      <li>
+        <a href="https://www.ndss-symposium.org/wp-content/uploads/2017/09/05_4_slides.pdf" role="button" title="Venue Slides">
+          <i class="fas fa-chalkboard-teacher"></i>Slides
+        </a>
+      </li>
+    
+    </ol>
+  </section>
+    
+  <!-- awards -->
+  
+    
+  
+  <section class="awards">
+    <h3>Awards</h3>
+    
+      <i class="fas fa-star"></i> 47th Annual Alan Berman Research Publication Award for Best Paper in NRL’s Information Technology Division, 2015-04-17 <br/>
+    
+  </section>
+    
+  <!-- transitions -->
+  
+    
+  
+  <section class="transitions">
+    <h3>Transitions</h3>
+    
+      <i class="fas fa-cog"></i> Our circuit killer DoS defense was deployed in <a href="https://lists.torproject.org/pipermail/tor-talk/2013-December/031392.html">Tor v0.2.4 on 2013-12-12</a> <br/>
+    
+      <i class="fas fa-cog"></i> Our work influenced deployed guard selection changes in <a href="https://gitweb.torproject.org/torspec.git/tree/proposals/271-another-guard-selection.txt">Tor proposal 271</a> <br/>
+    
+      <i class="fas fa-cog"></i> Our work influenced proposed authenticated SENDME DoS defense in <a href="https://gitweb.torproject.org/torspec.git/tree/proposals/289-authenticated-sendmes.txt">Tor proposal 289</a> <br/>
+    
+  </section>
+    
+  <!-- media mentions -->
+  
+  
+  
+
+  <!-- Abstract -->
+  
+  <section class="abs">
+    <h3>Abstract</h3>
+    <p>Tor is a distributed onion-routing network used for achieving anonymity and resisting censorship online. Because of Tor’s growing popularity, it is attracting increasingly larger threats against which it was not securely designed. In this paper, we present the Sniper Attack, an extremely low cost but highly destructive denial of service attack against Tor that an adversary may use to anonymously disable arbitrary Tor relays. The attack utilizes valid protocol messages to boundlessly consume memory by exploiting Tor’s end-to-end reliable data transport. We design and evaluate a prototype of the attack to show its feasibility and efficiency: our experiments show that an adversary may consume a victim relay’s memory by as much as 2187 KiB/s while using at most only 92 KiB/s of upstream bandwidth. We extend our experimental results to estimate the threat against the live Tor network and find that a strategic adversary could disable all of the top 20 exit relays in only 29 minutes, thereby reducing Tor’s bandwidth capacity by 35 percent. We also show how the attack enables the deanonymization of hidden services through selective denial of service by forcing them to choose guard nodes in control of the adversary. Finally, we discuss defenses against the Sniper Attack that provably render the attack ineffective, and suggest defenses against deanonymization by denial-of-service attacks in general that significantly mitigate the threat.</p>
+  </section>
+  
+
+  <!-- Bibtex entry -->
+  
+  <section class="bibtex">
+    <h3>Bibtex</h3>
+    <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">sniper-ndss2014</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{The Sniper Attack: Anonymously Deanonymizing and Disabling the {Tor} Network}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Jansen, Rob and Tschorsch, Florian and Johnson, Aaron and Scheuermann, Bj&amp;ouml;rn}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Network and Distributed System Security Symposium}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2014}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.14722/ndss.2014.23288}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+  </section>
+  
+</div>
+</li></ol>
+</div>
+</div>
+<footer>
+  <div class="footer">
+    Copyright © 2023
+    <a href="https://www.robgjansen.com">Rob G. Jansen</a>. 
+    Last modified Jul 4th, 2023.
+    <br/>
+    Powered by
+    <a href="https://jekyllrb.com">Jekyll</a>
+    with
+    <a href="https://github.com/chrjabs/Grape-Academic-Theme">Grape Academic Theme</a>.
+    <br/>
+    The views and opinions expressed in this page are strictly those of the page author.
+  </div>
+</footer>
+
+</body>
+</html>

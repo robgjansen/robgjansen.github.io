@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Favicon code from realfavicongenerator.net -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/fav/favicon-16x16.png">
+<link rel="manifest" href="/assets/fav/site.webmanifest">
+<link rel="mask-icon" href="/assets/fav/safari-pinned-tab.svg" color="#003166">
+<meta name="msapplication-TileColor" content="#001e3d">
+<meta name="theme-color" content="#ffffff">
+
+  <!--jQuery-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+  <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Users Get Routed: Traffic Correlation on Tor by Realistic Adversaries | robgjansen.com</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Users Get Routed: Traffic Correlation on Tor by Realistic Adversaries" />
+<meta name="author" content="Rob G. Jansen (robgjansen)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This site presents a summary of my scholarly activity and an archive of my research outputs." />
+<meta property="og:description" content="This site presents a summary of my scholarly activity and an archive of my research outputs." />
+<meta property="og:site_name" content="robgjansen.com" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Users Get Routed: Traffic Correlation on Tor by Realistic Adversaries" />
+<meta name="twitter:site" content="@robgjansen" />
+<meta name="twitter:creator" content="@Rob G. Jansen (robgjansen)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Rob G. Jansen (robgjansen)"},"description":"This site presents a summary of my scholarly activity and an archive of my research outputs.","headline":"Users Get Routed: Traffic Correlation on Tor by Realistic Adversaries","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/rob3.jpg"},"name":"Rob G. Jansen (robgjansen)"},"url":"/publications/usersrouted-ccs2013.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<!--jQuery-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<body>
+    
+
+
+<section id="header-nav">
+<header>
+    <nav>
+    <ul>
+        
+        <a href="/">
+        <li class="btn-nav">Home</li>
+        </a>
+        
+        <a href="/publications">
+        <li class="current btn-nav">Publications</li>
+        </a>
+        
+        
+        <a href="/presentations">
+            <li class="btn-nav">Presentations</li>
+        </a>
+        
+        
+        <a href="/service">
+            <li class="btn-nav">Service</li>
+        </a>
+        
+        
+        <a href="/blog">
+            <li class="btn-nav">Blog</li>
+        </a>
+        
+        
+        <!-- presentations -->
+        
+    </ul>
+    </nav>
+</header>
+</section>
+
+
+
+
+<section id="about-me">
+  <div class="row">
+    <div class="img-wrap col-12 col-md-4">
+      <div class="img">
+        <img src="/assets/img/rob3.jpg" alt="user_image">
+      </div>
+    </div>
+    <div class="text-wrap col-12 col-md-8">
+      <h2 class="username">Rob G. Jansen, PhD</h2>
+      <div class="description"><p>Computer Scientist, Researcher, and Principal Investigator<br />U.S. Naval Research Laboratory, Washington, DC, USA</p>
+</div>
+
+      <ul id="icons">
+        
+
+<li>
+  <a href="mailto:%72%6F%62.%67.%6A%61%6E%73%65%6E@%6E%72%6C.%6E%61%76%79.%6D%69%6C" target="_blank" title="Email">
+    <i class="fas fa-envelope"></i>
+  </a>
+</li>
+
+
+
+<li>
+  <a href="https://orcid.org/0000-0002-4406-997X" title="ORCID">
+    <i class="ai ai-orcid"></i>
+  </a>
+</li>
+
+
+
+<li>
+  <a href="https://scholar.google.com/citations?user=_s3Lx1oAAAAJ" title="Google Scholar">
+    <i class="ai ai-google-scholar"></i>
+  </a>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a href="https://dblp.org/pid/14/7561.html/" title="DBLP">
+    <i class="ai ai-dblp"></i>
+  </a>
+</li>
+
+
+
+
+
+<li>
+  <a href="https://www.linkedin.com/in/robgjansen" title="Linkedin">
+    <i class="fab fa-linkedin"></i>
+  </a>
+</li>
+
+
+
+<li>
+  <a href="https://github.com/robgjansen" title="Github">
+    <i class="fab fa-github"></i>
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+<li>
+  <a rel="me" href="https://discuss.systems/@robgjansen" title="Mastodon">
+    <i class="fab fa-mastodon"></i>
+  </a>
+</li>
+
+
+
+<li>
+  <a href="https://twitter.com/robgjansen" title="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+</li>
+
+
+
+<li>
+  <a href="https://www.youtube.com/user/robgjansen" title="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+</li>
+
+
+
+
+
+      </ul>
+    </div>
+  </div>
+  <div class="bg"></div>
+</section>
+
+
+<div class="container-fluid">
+  <div id="details">
+  <h1 class="title">Publication Details</h1>
+  
+  <ol class="bibliography"><li><!-- Entry bib key -->
+<div id="usersrouted-ccs2013">
+  
+  <!-- Main publication citation -->
+  <section class="citation">
+    <h3>Citation</h3>
+    
+  <!-- Author -->
+  <div class="author"><a href="https://www.ohmygodel.com" rel="noopener noreferrer" title="Visit coauthor's website">Aaron Johnson</a>,&nbsp;Chris Wacek,&nbsp;
+            <em>Rob Jansen</em>,&nbsp;<a href="https://seclab.cs.georgetown.edu/msherr/" rel="noopener noreferrer" title="Visit coauthor's website">Micah Sherr</a>,&nbsp;and <a href="http://www.syverson.org/" rel="noopener noreferrer" title="Visit coauthor's website">Paul Syverson</a>:
+            
+  </div>
+
+  <!-- Journal/Book title and date -->
+  
+
+  <div><span class="title">Users Get Routed: Traffic Correlation on Tor by Realistic Adversaries.</span>
+
+    <span class="venue">
+      <a href="https://www.sigsac.org/ccs/CCS2013" rel="noopener noreferrer" title="Visit venue's website">Conference on Computer and Communications Security, 2013</a>.</span></div>
+  </section>
+
+  
+
+  <!-- author buttons -->
+  
+    
+  
+  <section class="author_buttons">
+    <h3>Author Links</h3>
+    
+    <ol class="link-list">
+      <li>
+        <a href="/publications/usersrouted-ccs2013.pdf" role="button" title="PDF">
+          <i class="fas fa-file-pdf"></i>PDF
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/torps/torps" role="button" title="Code">
+          <i class="fas fa-code"></i>Code
+        </a>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1145/2508859.2516651" role="button" title="DOI">
+          <i class="ai ai-doi"></i>DOI
+        </a>
+      </li>
+    
+    </ol>
+  </section>
+    
+  <!-- venue buttons -->
+  
+    
+  
+  <section class="venue_buttons">
+    <h3>Venue Links</h3>
+    
+    <ol class="link-list">
+      <li>
+        <a href="https://www.sigsac.org/ccs/CCS2013" role="button" title="Venue Website">
+          <i class="fas fa-globe"></i>Website
+        </a>
+      </li>
+    
+    </ol>
+  </section>
+    
+  <!-- awards -->
+  
+    
+  
+    
+  <!-- transitions -->
+  
+    
+  
+    
+  <!-- media mentions -->
+  
+  
+  
+  <section class="media_mentions">
+    <h3>Media Mentions</h3>
+    
+      <i class="fas fa-blog"></i> <a href="http://arstechnica.com/security/2016/08/building-a-new-tor-that-withstands-next-generation-state-surveillance/" title="Building a new Tor that can resist next-generation state surveillance">ars technica</a> <br/>
+    
+      <i class="fas fa-blog"></i> <a href="http://arstechnica.com/security/2013/09/snoops-can-identify-tor-users-given-enough-time-experts-say" title="Snoops can identify Tor users given enough time, experts say">ars technica</a> <br/>
+    
+      <i class="fas fa-blog"></i> <a href="http://www.technologyreview.com/news/520141/anonymity-network-tor-needs-a-tune-up-to-protect-users-from-surveillance/" title="Anonymity Network Tor Needs a Tune-up to Protect Users from Surveillance">mit tech review</a> <br/>
+    
+      <i class="fas fa-blog"></i> <a href="http://www.theregister.co.uk/2013/09/01/tor_correlation_follows_the_breadcrumbs_back_to_the_users/" title="Boffins follow TOR breadcrumbs to identify users">the register</a> <br/>
+    
+      <i class="fas fa-blog"></i> <a href="http://www.infosecurity-magazine.com/view/34294/tor-is-not-as-safe-as-you-may-think/" title="Tor is Not as Safe as You May Think">infosec magazine</a> <br/>
+    
+      <i class="fas fa-blog"></i> <a href="http://motherboard.vice.com/blog/tor-is-less-anonymous-than-you-think" title="Tor Is Less Anonymous Than You Think">vice</a> <br/>
+    
+      <i class="fas fa-blog"></i> <a href="http://www.net-security.org/secworld.php?id=15504" title="Persistent adversaries can identify Tor users">help net security</a> <br/>
+    
+      <i class="fas fa-blog"></i> <a href="http://www.irishtimes.com/business/technology/anonymity-based-tor-platform-has-security-issues-according-to-report-1.1515893" title="Anonymity-based Tor platform has security issues according to report">irish times</a> <br/>
+    
+      <i class="fas fa-blog"></i> <a href="http://m.heise.de/newsticker/meldung/Tor-Benutzer-leicht-zu-enttarnen-1949449.html" title="Tor users easy to unmask">heise</a> <br/>
+    
+      <i class="fas fa-blog"></i> <a href="http://www.developpez.com/actu/60700/L-anonymat-du-reseau-Tor-ebranle-par-des-chercheurs-americains-des-utilisateurs-peuvent-etre-identifies-a-95-dans-certains-cas" title="The anonymity of the Tor network shaken by US researchers">developpez</a> <br/>
+    
+      <i class="fas fa-blog"></i> <a href="http://punto-informatico.it/3882436/PI/News/tor-anonimato-non-garantito.aspx" title="Tor anonymity not guaranteed">punto informatico</a> <br/>
+    
+      <i class="fas fa-blog"></i> <a href="http://www.computeridee.nl/nieuws/identiteit-tor-gebruikers-toch-te-achterhalen/" title="Identity Tor users yet to figure out">computeridee</a> <br/>
+    
+  </section>
+
+  <!-- Abstract -->
+  
+  <section class="abs">
+    <h3>Abstract</h3>
+    <p>We present the first analysis of the popular Tor anonymity network that indicates the security of typical users against reasonably realistic adversaries in the Tor network or in the underlying Internet. Our results show that Tor users are far more susceptible to compromise than indicated by prior work. Specific contributions of the paper include (1) a model of various typical kinds of users, (2) an adversary model that includes Tor network relays, autonomous systems (ASes), Internet exchange points (IXPs), and groups of IXPs drawn from empirical study, (3) metrics that indicate how secure users are over a period of time, (4) the most accurate topological model to date of ASes and IXPs as they relate to Tor usage and network configuration, (5) a novel realistic Tor path simulator (TorPS), and (6) analyses of security making use of all the above. To show that our approach is useful to explore alternatives and not just Tor as currently deployed, we also analyze a published alternative path selection algorithm, Congestion-Aware Tor. We create an empirical model of Tor congestion, identify novel attack vectors, and show that it too is more vulnerable than previously indicated.</p>
+  </section>
+  
+
+  <!-- Bibtex entry -->
+  
+  <section class="bibtex">
+    <h3>Bibtex</h3>
+    <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">usersrouted-ccs2013</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Users Get Routed: Traffic Correlation on Tor by Realistic Adversaries}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Johnson, Aaron and Wacek, Chris and Jansen, Rob and Sherr, Micah and Syverson, Paul}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Conference on Computer and Communications Security}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2013}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1145/2508859.2516651}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+  </section>
+  
+</div>
+</li></ol>
+</div>
+</div>
+<footer>
+  <div class="footer">
+    Copyright © 2023
+    <a href="https://www.robgjansen.com">Rob G. Jansen</a>. 
+    Last modified Jul 4th, 2023.
+    <br/>
+    Powered by
+    <a href="https://jekyllrb.com">Jekyll</a>
+    with
+    <a href="https://github.com/chrjabs/Grape-Academic-Theme">Grape Academic Theme</a>.
+    <br/>
+    The views and opinions expressed in this page are strictly those of the page author.
+  </div>
+</footer>
+
+</body>
+</html>
