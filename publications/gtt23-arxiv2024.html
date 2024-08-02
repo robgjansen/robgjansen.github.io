@@ -26,9 +26,9 @@
   <link rel="stylesheet" href="/assets/css/main.css">
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Privacy preserving performance enhancements for anonymous communication networks | robgjansen.com</title>
+<title>A Measurement of Genuine Tor Traces for Realistic Website Fingerprinting | robgjansen.com</title>
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Privacy preserving performance enhancements for anonymous communication networks" />
+<meta property="og:title" content="A Measurement of Genuine Tor Traces for Realistic Website Fingerprinting" />
 <meta name="author" content="Rob G. Jansen (robgjansen)" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This site presents a summary of my scholarly activity and an archive of my research outputs." />
@@ -36,11 +36,11 @@
 <meta property="og:site_name" content="robgjansen.com" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Privacy preserving performance enhancements for anonymous communication networks" />
+<meta property="twitter:title" content="A Measurement of Genuine Tor Traces for Realistic Website Fingerprinting" />
 <meta name="twitter:site" content="@robgjansen" />
 <meta name="twitter:creator" content="@Rob G. Jansen (robgjansen)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Rob G. Jansen (robgjansen)"},"description":"This site presents a summary of my scholarly activity and an archive of my research outputs.","headline":"Privacy preserving performance enhancements for anonymous communication networks","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/rob3.jpg"},"name":"Rob G. Jansen (robgjansen)"},"url":"/publications/jansen-phd-dissertation.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Rob G. Jansen (robgjansen)"},"description":"This site presents a summary of my scholarly activity and an archive of my research outputs.","headline":"A Measurement of Genuine Tor Traces for Realistic Website Fingerprinting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/rob3.jpg"},"name":"Rob G. Jansen (robgjansen)"},"url":"/publications/gtt23-arxiv2024.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -202,7 +202,7 @@
   <h1 class="title">Publication Details</h1>
   
   <ol class="bibliography"><li><!-- Entry bib key -->
-<div id="jansen-phd-dissertation">
+<div id="gtt23-arxiv2024">
   
   <!-- Main publication citation -->
   <section class="citation">
@@ -210,16 +210,17 @@
     
   <!-- Author -->
   <div class="author">
-          <em>Rob Jansen</em>:
+            <em>Rob Jansen</em>,&nbsp;<a href="https://ryanwails.com" rel="noopener noreferrer" title="Visit coauthor's website">Ryan Wails</a>,&nbsp;and <a href="https://www.ohmygodel.com" rel="noopener noreferrer" title="Visit coauthor's website">Aaron Johnson</a>:
+            
   </div>
 
   <!-- Journal/Book title and date -->
   
 
-  <div><span class="title">Privacy preserving performance enhancements for anonymous communication networks.</span>
+  <div><span class="prefix">Informal: </span><span class="title">A Measurement of Genuine Tor Traces for Realistic Website Fingerprinting.</span>
 
     <span class="venue">
-      <a href="https://conservancy.umn.edu/handle/11299/142620" rel="noopener noreferrer" title="Visit venue's website">PhD thesis, University of Minnesota, 2012</a>.</span></div>
+      Technical Report, 2024.</span></div>
   </section>
 
   
@@ -233,8 +234,23 @@
     
     <ol class="link-list">
       <li>
-        <a href="/publications/jansen-phd-dissertation.pdf" role="button" title="PDF">
+        <a href="/publications/gtt23-arxiv2024.pdf" role="button" title="PDF">
           <i class="fas fa-file-pdf"></i>PDF
+        </a>
+      </li>
+      <li>
+        <a href="https://doi.org/10.48550/arXiv.2404.07892" role="button" title="DOI">
+          <i class="ai ai-doi"></i>DOI
+        </a>
+      </li>
+      <li>
+        <a href="https://arxiv.org/abs/https://arxiv.org/abs/2404.07892" role="button" title="arXiv">
+          <i class="ai ai-arxiv"></i>arXiv
+        </a>
+      </li>
+      <li>
+        <a href="https://doi.org/10.5281/zenodo.10869889" role="button" title="Artifact">
+          <i class="fas fa-archive"></i>Artifact
         </a>
       </li>
     
@@ -245,28 +261,6 @@
   
     
   
-  <section class="venue_buttons">
-    <h3>Venue Links</h3>
-    
-    <ol class="link-list">
-      <li>
-        <a href="https://conservancy.umn.edu/handle/11299/142620" role="button" title="Venue Website">
-          <i class="fas fa-globe"></i>Website
-        </a>
-      </li>
-      <li>
-        <a href="https://hdl.handle.net/11299/142620" role="button" title="Venue URL">
-          <i class="fas fa-link"></i>URL
-        </a>
-      </li>
-      <li>
-        <a href="https://conservancy.umn.edu/bitstream/handle/11299/142620/Jansen_umn_0130E_13261.pdf", role="button" title="Venue PDF">
-          <i class="fas fa-file-pdf"></i>PDF
-        </a>
-      </li>
-    
-    </ol>
-  </section>
     
   <!-- awards -->
   
@@ -287,8 +281,7 @@
   
   <section class="abs">
     <h3>Abstract</h3>
-    <p>An anonymous communication system hides the fact that two parties are communicating, and as a result, drastically improves the online privacy of those using it. Tor is the most popular anonymous communication system deployed, but its popularity has illuminated problems with its design that have made it unbearably slow for many users who would otherwise benefit from its protections. These performance problems have been recognized, but there has been little work on designing and properly evaluating practical solutions that improve performance while also preserving privacy. We initiate an exploration into Tor’s system design and the quality of the communication it provides. First, we design and develop a simulation tool, called Shadow, that allows us to experiment with the Tor software in a safe but realistic and controllable manner. We then give a precise model of the Tor network, the backbone networks upon which it operates, and the user agents operating within it. We show that by combining
- our model with Shadow, our experimentation environment is capable of producing network interactions and performance qualities indicative of real systems. We then investigate performance enhancements in three major areas of Tor’s design. We explore Tor’s utilization of resources by evaluating both existing and new circuit scheduling techniques, and show the extent to which scheduling can be used to prioritize traffic in order to improve desirable quality metrics. We then design and evaluate algorithms focused on reducing network load by throttling agents that consume an unfair share of network resources. Finally, in an effort to supplement Tor’s volunteered resources, we design and analyze two schemes that increase network capacity by providing incentives to those contributing resources to the system.</p>
+    <p>Website fingerprinting (WF) is a dangerous attack on web privacy because it enables an adversary to predict the website a user is visiting, despite the use of encryption, VPNs, or anonymizing networks such as Tor. Previous WF work almost exclusively uses synthetic datasets to evaluate the performance and estimate the feasibility of WF attacks despite evidence that synthetic data misrepresents the real world. In this paper we present GTT23, the first WF dataset of genuine Tor traces, which we obtain through a large-scale measurement of the Tor network. GTT23 represents real Tor user behavior better than any existing WF dataset, is larger than any existing WF dataset by at least an order of magnitude, and will help ground the future study of realistic WF attacks and defenses. In a detailed evaluation, we survey 25 WF datasets published over the last 15 years and compare their characteristics to those of GTT23. We discover common deficiencies of synthetic datasets that make them inferior to GTT23 for drawing meaningful conclusions about the effectiveness of WF attacks directed at real Tor users. We have made GTT23 available to promote reproducible research and to help inspire new directions for future work.</p>
   </section>
   
 
@@ -296,12 +289,12 @@
   
   <section class="bibtex">
     <h3>Bibtex</h3>
-    <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@phdthesis</span><span class="p">{</span><span class="nl">jansen-phd-dissertation</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Jansen, Rob}</span><span class="p">,</span>
-  <span class="na">school</span> <span class="p">=</span> <span class="s">{University of Minnesota}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Dissertations}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Privacy preserving performance enhancements for anonymous communication networks}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2012}</span><span class="p">,</span>
+    <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@techreport</span><span class="p">{</span><span class="nl">gtt23-arxiv2024</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{A Measurement of Genuine Tor Traces for Realistic Website Fingerprinting}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Jansen, Rob and Wails, Ryan and Johnson, Aaron}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{arXiv:2404.07892 [cs.CR]}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.48550/arXiv.2404.07892}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
   </section>
   
