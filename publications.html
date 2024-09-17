@@ -133,12 +133,6 @@
 
 
 
-<li>
-  <a href="https://twitter.com/robgjansen" title="Twitter">
-    <i class="fab fa-twitter"></i>
-  </a>
-</li>
-
 
 
 <li>
@@ -201,7 +195,57 @@
 <div id="publications">
   <h1 class="title">Publications and Scholarly Articles</h1>
   <h2 class="bibliography">2024</h2>
-<ol class="bibliography"><li><!-- Entry bib key --><div id="ptsplit-foci2024">
+<ol class="bibliography"><li><!-- Entry bib key --><div id="retracer-wpes2024">
+  <!-- Author -->
+  <div class="author">
+            <em>Rob Jansen</em>,&nbsp;<a href="https://ryanwails.com" rel="noopener noreferrer" title="Visit coauthor's website">Ryan Wails</a>,&nbsp;and <a href="https://www.ohmygodel.com" rel="noopener noreferrer" title="Visit coauthor's website">Aaron Johnson</a>:
+            
+  </div>
+
+  <!-- Journal/Book title and date -->
+  
+
+  <div><span class="title">Repositioning Real-World Website Fingerprinting on Tor.</span>
+
+    <span class="venue">
+      <a href="https://cseapps.case.edu/wpes2024" rel="noopener noreferrer" title="Visit venue's website">Workshop on Privacy in the Electronic Society, 2024</a>.</span></div>
+
+  <!-- Links/Buttons -->
+  <div class="links">
+      <a href="/publications/retracer-wpes2024.pdf" title="Download pdf">
+        <i class="fas fa-sm fa-file-pdf"></i>
+        <span class="label">pdf</span>
+      </a>
+      <a class="abstract" title="Show abstract">
+        <i class="fas fa-sm fa-align-justify"></i>
+        <span class="label">abs</span>
+      </a>
+      <a class="bibtex" title="Show bibtex">
+        <i class="fas fa-sm fa-quote-right"></i>
+        <span class="label">bib</span>
+      </a>
+
+    <a href="/publications/retracer-wpes2024.html" title="Visit details page">
+      <i class="fas fa-sm fa-info-circle"></i>
+      <span class="label">details</span>
+    </a>
+  </div>
+
+  <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>Website fingerprinting (WF) is a potentially devastating attack against Tor because it can break anonymity by linking a Tor user to their purportedly unlinkable internet destinations. Previous work proposes that an adversary trains WF classifiers either on synthetic traces that are programmatically generated using automated tools, or on real-world traces collected from one or more Tor exit relays. However, no existing work accurately represents a real-world threat model in which a WF adversary’s classifiers must be tested against real-world entry traces that are naturally created by real Tor users. In this paper we present Retracer, a novel method for producing labeled entry traces of genuine Tor traffic patterns. Retracer uses high-fidelity network simulation to accurately transform real-world exit traces into entry traces prior to training and testing WF classifiers. After first demonstrating that Retracer accurately transforms exit traces into entry traces, we then apply it to the recently released GTT23 dataset in a WF evaluation in which more than 3500 classifiers are tested against, for the first time, labeled entry traces of real Tor traffic patterns. Our evaluation yields the best available estimate of the performance an adversary can achieve when directing WF attacks at real Tor users.</p>
+    </div><!-- Hidden bibtex block -->
+    <div class="bibtex hidden">
+      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">retracer-wpes2024</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Repositioning Real-World Website Fingerprinting on Tor}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Jansen, Rob and Wails, Ryan and Johnson, Aaron}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Workshop on Privacy in the Electronic Society}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1145/3689943.3695047}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+    </div>
+</div></li>
+<li><!-- Entry bib key --><div id="ptsplit-foci2024">
   <!-- Author -->
   <div class="author">Anna Harbluk Lorimer,&nbsp;
             <em>Rob Jansen</em>,&nbsp;and <a href="https://people.cs.uchicago.edu/~feamster/" rel="noopener noreferrer" title="Visit coauthor's website">Nick Feamster</a>:
@@ -2734,7 +2778,7 @@ We demonstrate the feasibility of several bandwidth DoS attacks through live-net
   <div class="footer">
     Copyright © 2024
     <a href="https://www.robgjansen.com">Rob G. Jansen</a>. 
-    Last modified Aug 2nd, 2024.
+    Last modified Sep 17th, 2024.
     <br/>
     Powered by
     <a href="https://jekyllrb.com">Jekyll</a>
