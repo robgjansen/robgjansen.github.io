@@ -26,9 +26,9 @@
   <link rel="stylesheet" href="/assets/css/main.css">
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>A Measurement of Genuine Tor Traces for Realistic Website Fingerprinting | robgjansen.com</title>
+<title>CellShift: RTT-Aware Trace Transduction for Real-World Website Fingerprinting | robgjansen.com</title>
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="A Measurement of Genuine Tor Traces for Realistic Website Fingerprinting" />
+<meta property="og:title" content="CellShift: RTT-Aware Trace Transduction for Real-World Website Fingerprinting" />
 <meta name="author" content="Rob G. Jansen (robgjansen)" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This site presents a summary of my scholarly activity and an archive of my research outputs." />
@@ -36,11 +36,11 @@
 <meta property="og:site_name" content="robgjansen.com" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="A Measurement of Genuine Tor Traces for Realistic Website Fingerprinting" />
+<meta property="twitter:title" content="CellShift: RTT-Aware Trace Transduction for Real-World Website Fingerprinting" />
 <meta name="twitter:site" content="@robgjansen" />
 <meta name="twitter:creator" content="@Rob G. Jansen (robgjansen)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Rob G. Jansen (robgjansen)"},"description":"This site presents a summary of my scholarly activity and an archive of my research outputs.","headline":"A Measurement of Genuine Tor Traces for Realistic Website Fingerprinting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/rob3.jpg"},"name":"Rob G. Jansen (robgjansen)"},"url":"/publications/gtt23-arxiv2024.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Rob G. Jansen (robgjansen)"},"description":"This site presents a summary of my scholarly activity and an archive of my research outputs.","headline":"CellShift: RTT-Aware Trace Transduction for Real-World Website Fingerprinting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/rob3.jpg"},"name":"Rob G. Jansen (robgjansen)"},"url":"/publications/cellshift-ndss2026.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -196,7 +196,7 @@
   <h1 class="title">Publication Details</h1>
   
   <ol class="bibliography"><li><!-- Entry bib key -->
-<div id="gtt23-arxiv2024">
+<div id="cellshift-ndss2026">
   
   <!-- Main publication citation -->
   <section class="citation">
@@ -204,17 +204,16 @@
     
   <!-- Author -->
   <div class="author">
-            <em>Rob Jansen</em>,&nbsp;<a href="https://ryanwails.com" rel="noopener noreferrer" title="Visit coauthor's website">Ryan Wails</a>,&nbsp;and <a href="https://www.ohmygodel.com" rel="noopener noreferrer" title="Visit coauthor's website">Aaron Johnson</a>:
-            
+          <em>Rob Jansen</em>:
   </div>
 
   <!-- Journal/Book title and date -->
   
 
-  <div><span class="prefix">Informal: </span><span class="title">A Measurement of Genuine Tor Traces for Realistic Website Fingerprinting.</span>
+  <div><span class="title">CellShift: RTT-Aware Trace Transduction for Real-World Website Fingerprinting.</span>
 
     <span class="venue">
-      Technical Report, 2024.</span></div>
+      <a href="https://www.ndss-symposium.org/ndss2026" rel="noopener noreferrer" title="Visit venue's website">Network and Distributed System Security Symposium, 2026</a>.</span></div>
   </section>
 
   
@@ -228,22 +227,22 @@
     
     <ol class="link-list">
       <li>
-        <a href="/publications/gtt23-arxiv2024.pdf" role="button" title="PDF">
+        <a href="/publications/cellshift-ndss2026.pdf" role="button" title="PDF">
           <i class="fas fa-file-pdf"></i>PDF
         </a>
       </li>
       <li>
-        <a href="https://doi.org/10.48550/arXiv.2404.07892" role="button" title="DOI">
+        <a href="https://github.com/robgjansen/cellshift" role="button" title="Code">
+          <i class="fas fa-code"></i>Code
+        </a>
+      </li>
+      <li>
+        <a href="https://doi.org/10.14722/ndss.2026.231004" role="button" title="DOI">
           <i class="ai ai-doi"></i>DOI
         </a>
       </li>
       <li>
-        <a href="https://arxiv.org/abs/2404.07892" role="button" title="arXiv">
-          <i class="ai ai-arxiv"></i>arXiv
-        </a>
-      </li>
-      <li>
-        <a href="https://doi.org/10.5281/zenodo.10869889" role="button" title="Artifact">
+        <a href="https://doi.org/10.5281/zenodo.15863906" role="button" title="Artifact">
           <i class="fas fa-archive"></i>Artifact
         </a>
       </li>
@@ -255,6 +254,18 @@
   
     
   
+  <section class="venue_buttons">
+    <h3>Venue Links</h3>
+    
+    <ol class="link-list">
+      <li>
+        <a href="https://www.ndss-symposium.org/ndss2026" role="button" title="Venue Website">
+          <i class="fas fa-globe"></i>Website
+        </a>
+      </li>
+    
+    </ol>
+  </section>
     
   <!-- awards -->
   
@@ -275,7 +286,7 @@
   
   <section class="abs">
     <h3>Abstract</h3>
-    <p>Website fingerprinting (WF) is a dangerous attack on web privacy because it enables an adversary to predict the website a user is visiting, despite the use of encryption, VPNs, or anonymizing networks such as Tor. Previous WF work almost exclusively uses synthetic datasets to evaluate the performance and estimate the feasibility of WF attacks despite evidence that synthetic data misrepresents the real world. In this paper we present GTT23, the first WF dataset of genuine Tor traces, which we obtain through a large-scale measurement of the Tor network. GTT23 represents real Tor user behavior better than any existing WF dataset, is larger than any existing WF dataset by at least an order of magnitude, and will help ground the future study of realistic WF attacks and defenses. In a detailed evaluation, we survey 25 WF datasets published over the last 15 years and compare their characteristics to those of GTT23. We discover common deficiencies of synthetic datasets that make them inferior to GTT23 for drawing meaningful conclusions about the effectiveness of WF attacks directed at real Tor users. We have made GTT23 available to promote reproducible research and to help inspire new directions for future work.</p>
+    <p>Website fingerprinting is a privacy attack in which an adversary applies machine learning to predict the website a user visits through Tor. Recent work proposes evaluating WF attacks using the "genuine" patterns or traces of Tor users’ natural interactions that can be measured by Tor exit relays, but these traces do not accurately reflect the patterns that an entry-side WF attacker would observe. In this paper, we present new methods for transducing exit traces into entry traces that we can use to more accurately estimate the risk WF poses to real Tor users. Our methods leverage trace timestamps and metadata to extract multiple round-trip time estimates and use them to "shift" traces to the perspective of a target vantage point. We show through extensive evaluation that our methods outperform the state of the art across multiple synthetic and genuine datasets and are considerably more efficient; they enable researchers to more accurately represent the real-world challenge facing an entry-side WF adversary, and produce augmented datasets that allow an adversary to boost the performance of existing WF attacks.</p>
   </section>
   
 
@@ -283,12 +294,12 @@
   
   <section class="bibtex">
     <h3>Bibtex</h3>
-    <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@techreport</span><span class="p">{</span><span class="nl">gtt23-arxiv2024</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{A Measurement of Genuine Tor Traces for Realistic Website Fingerprinting}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Jansen, Rob and Wails, Ryan and Johnson, Aaron}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{arXiv:2404.07892 [cs.CR]}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
-  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.48550/arXiv.2404.07892}</span><span class="p">,</span>
+    <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">cellshift-ndss2026</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{CellShift: RTT-Aware Trace Transduction for Real-World Website Fingerprinting}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Jansen, Rob}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Network and Distributed System Security Symposium}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.14722/ndss.2026.231004}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
   </section>
   
