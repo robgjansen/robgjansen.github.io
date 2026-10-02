@@ -26,9 +26,9 @@
   <link rel="stylesheet" href="/assets/css/main.css">
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Onions for Sale: Putting Privacy on the Market | robgjansen.com</title>
+<title>Brewing Under Pressure: More Realistic Tor Flow Correlation Considering Low FPRs | robgjansen.com</title>
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Onions for Sale: Putting Privacy on the Market" />
+<meta property="og:title" content="Brewing Under Pressure: More Realistic Tor Flow Correlation Considering Low FPRs" />
 <meta name="author" content="Rob G. Jansen (robgjansen)" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This site presents a summary of my scholarly activity and an archive of my research outputs." />
@@ -36,11 +36,11 @@
 <meta property="og:site_name" content="robgjansen.com" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Onions for Sale: Putting Privacy on the Market" />
+<meta property="twitter:title" content="Brewing Under Pressure: More Realistic Tor Flow Correlation Considering Low FPRs" />
 <meta name="twitter:site" content="@robgjansen" />
 <meta name="twitter:creator" content="@Rob G. Jansen (robgjansen)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Rob G. Jansen (robgjansen)"},"description":"This site presents a summary of my scholarly activity and an archive of my research outputs.","headline":"Onions for Sale: Putting Privacy on the Market","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/rob3.jpg"},"name":"Rob G. Jansen (robgjansen)"},"url":"/publications/onionsforsale-fc2013.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Rob G. Jansen (robgjansen)"},"description":"This site presents a summary of my scholarly activity and an archive of my research outputs.","headline":"Brewing Under Pressure: More Realistic Tor Flow Correlation Considering Low FPRs","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/rob3.jpg"},"name":"Rob G. Jansen (robgjansen)"},"url":"/publications/espresso-ccs2026.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -196,25 +196,25 @@
   <h1 class="title">Publication Details</h1>
   
   <ol class="bibliography"><li><!-- Entry bib key -->
-<div id="onionsforsale-fc2013">
+<div id="espresso-ccs2026">
   
   <!-- Main publication citation -->
   <section class="citation">
     <h3>Citation</h3>
     
   <!-- Author -->
-  <div class="author"><a href="https://www.ohmygodel.com" rel="noopener noreferrer" title="Visit coauthor's website">Aaron Johnson</a>,&nbsp;
-            <em>Rob Jansen</em>,&nbsp;and <a href="http://www.syverson.org/" rel="noopener noreferrer" title="Visit coauthor's website">Paul Syverson</a>:
+  <div class="author">Haeseung Jeon,&nbsp;Yeonseo Cho,&nbsp;Nate Mathews,&nbsp;
+            <em>Rob Jansen</em>,&nbsp;<a href="https://mjuarezm.github.io" rel="noopener noreferrer" title="Visit coauthor's website">Marc Juarez</a>,&nbsp;and <a href="https://sites.google.com/view/ewha-aisec/" rel="noopener noreferrer" title="Visit coauthor's website">Se Eun Oh</a>:
             
   </div>
 
   <!-- Journal/Book title and date -->
   
 
-  <div><span class="prefix">Poster abstract: </span><span class="title">Onions for Sale: Putting Privacy on the Market.</span>
+  <div><span class="title">Brewing Under Pressure: More Realistic Tor Flow Correlation Considering Low FPRs.</span>
 
     <span class="venue">
-      <a href="https://fc13.ifca.ai" rel="noopener noreferrer" title="Visit venue's website">Conference on Financial Cryptography and Data Security, 2013</a>.</span>
+      <a href="https://www.sigsac.org/ccs/CCS2026/" rel="noopener noreferrer" title="Visit venue's website">Conference on Computer and Communication Security, 2026</a>.</span>
   </div>
     <!-- Related papers/misc -->
   </section>
@@ -230,8 +230,18 @@
     
     <ol class="link-list">
       <li>
-        <a href="/publications/onionsforsale-fc2013.pdf" role="button" title="PDF">
+        <a href="/publications/espresso-ccs2026.pdf" role="button" title="PDF">
           <i class="fas fa-file-pdf"></i>PDF
+        </a>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1145/3830454.3846708" role="button" title="DOI">
+          <i class="ai ai-doi"></i>DOI
+        </a>
+      </li>
+      <li>
+        <a href="https://doi.org/10.5281/zenodo.19560962" role="button" title="Artifact">
+          <i class="fas fa-archive"></i>Artifact
         </a>
       </li>
     
@@ -247,18 +257,8 @@
     
     <ol class="link-list">
       <li>
-        <a href="https://fc13.ifca.ai" role="button" title="Venue Website">
+        <a href="https://www.sigsac.org/ccs/CCS2026/" role="button" title="Venue Website">
           <i class="fas fa-globe"></i>Website
-        </a>
-      </li>
-      <li>
-        <a href="https://fc13.ifca.ai/program.html" role="button" title="Venue URL">
-          <i class="fas fa-link"></i>URL
-        </a>
-      </li>
-      <li>
-        <a href="https://fc13.ifca.ai/proc/Poster-6.pdf", role="button" title="Venue PDF">
-          <i class="fas fa-file-pdf"></i>PDF
         </a>
       </li>
     
@@ -284,7 +284,7 @@
   
   <section class="abs">
     <h3>Abstract</h3>
-    <p>We propose that Tor supports the purchase of its services.</p>
+    <p>Flow correlation attacks threaten Tor’s anonymity by linking both ends of a communication circuit. Yet, existing correlation models rely on artificial datasets, resulting in significant performance degradation when evaluated against the sparse and highly variable nature of live Tor traffic. In this paper, we challenge this unrealistic evaluation by introducing two new datasets: Correlated GTT23, constructed from genuine exit traces, and Correlated CellFlow, comprising ground-truth flow pairs that we directly collected from the live Tor network. To tackle the unique challenges of these datasets, we propose ESPRESSO, a robust flow correlation attack tailored for realistic Tor traffic. ESPRESSO utilizes a density-based window representation via Kernel Density Estimation (KDE) to dynamically adapt to differences in transmission volume across a trace. Our results show that ESPRESSO outperforms state-of-the-art Tor flow correlation attacks, significantly improving detection accuracy across various scenarios, including standard settings and traffic drifted by temporal and network environment shifts. Notably, ESPRESSO achieves an impressive 88% True Positive Rate (TPR) at a False Positive Rate (FPR) of 10^−5, whereas DeepCoFFEA, the state-of-the-art attack, degrades to a near-zero TPR for the same FPR. This robustness holds even under adversarial constraints, including partial trace observations (as few as 500 cells) and limited visibility over the network under large numbers of concurrent connections (base rates as low as 10^−4). These findings indicate that flow correlation remains a severe, imminent threat, establishing both our datasets and ESPRESSO as the new standard benchmarks for evaluating future flow correlation attacks and defenses.</p>
   </section>
   
 
@@ -292,12 +292,12 @@
   
   <section class="bibtex">
     <h3>Bibtex</h3>
-    <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@misc</span><span class="p">{</span><span class="nl">onionsforsale-fc2013</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Onions for Sale: Putting Privacy on the Market}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Johnson, Aaron and Jansen, Rob and Syverson, Paul}</span><span class="p">,</span>
-  <span class="na">howpublished</span> <span class="p">=</span> <span class="s">{Conference on Financial Cryptography and Data Security}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2013}</span><span class="p">,</span>
-  <span class="na">note</span> <span class="p">=</span> <span class="s">{Poster abstract}</span><span class="p">,</span>
+    <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">espresso-ccs2026</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Brewing Under Pressure: More Realistic Tor Flow Correlation Considering Low FPRs}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Jeon, Haeseung and Cho, Yeonseo and Mathews, Nate and Jansen, Rob and Juarez, Marc and Oh, Se Eun}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Conference on Computer and Communication Security}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1145/3830454.3846708}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
   </section>
   

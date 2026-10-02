@@ -26,9 +26,9 @@
   <link rel="stylesheet" href="/assets/css/main.css">
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Onions for Sale: Putting Privacy on the Market | robgjansen.com</title>
+<title>Neural Architecture Search for Adaptive Website Fingerprinting | robgjansen.com</title>
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Onions for Sale: Putting Privacy on the Market" />
+<meta property="og:title" content="Neural Architecture Search for Adaptive Website Fingerprinting" />
 <meta name="author" content="Rob G. Jansen (robgjansen)" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This site presents a summary of my scholarly activity and an archive of my research outputs." />
@@ -36,11 +36,11 @@
 <meta property="og:site_name" content="robgjansen.com" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Onions for Sale: Putting Privacy on the Market" />
+<meta property="twitter:title" content="Neural Architecture Search for Adaptive Website Fingerprinting" />
 <meta name="twitter:site" content="@robgjansen" />
 <meta name="twitter:creator" content="@Rob G. Jansen (robgjansen)" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Rob G. Jansen (robgjansen)"},"description":"This site presents a summary of my scholarly activity and an archive of my research outputs.","headline":"Onions for Sale: Putting Privacy on the Market","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/rob3.jpg"},"name":"Rob G. Jansen (robgjansen)"},"url":"/publications/onionsforsale-fc2013.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Rob G. Jansen (robgjansen)"},"description":"This site presents a summary of my scholarly activity and an archive of my research outputs.","headline":"Neural Architecture Search for Adaptive Website Fingerprinting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/img/rob3.jpg"},"name":"Rob G. Jansen (robgjansen)"},"url":"/publications/cricket-wpes2026.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -196,25 +196,25 @@
   <h1 class="title">Publication Details</h1>
   
   <ol class="bibliography"><li><!-- Entry bib key -->
-<div id="onionsforsale-fc2013">
+<div id="cricket-wpes2026">
   
   <!-- Main publication citation -->
   <section class="citation">
     <h3>Citation</h3>
     
   <!-- Author -->
-  <div class="author"><a href="https://www.ohmygodel.com" rel="noopener noreferrer" title="Visit coauthor's website">Aaron Johnson</a>,&nbsp;
-            <em>Rob Jansen</em>,&nbsp;and <a href="http://www.syverson.org/" rel="noopener noreferrer" title="Visit coauthor's website">Paul Syverson</a>:
+  <div class="author">Gurjot Singh,&nbsp;
+            <em>Rob Jansen</em>,&nbsp;and <a href="https://cs.uwaterloo.ca/~dbarrada/" rel="noopener noreferrer" title="Visit coauthor's website">Diogo Barradas</a>:
             
   </div>
 
   <!-- Journal/Book title and date -->
   
 
-  <div><span class="prefix">Poster abstract: </span><span class="title">Onions for Sale: Putting Privacy on the Market.</span>
+  <div><span class="title">Neural Architecture Search for Adaptive Website Fingerprinting.</span>
 
     <span class="venue">
-      <a href="https://fc13.ifca.ai" rel="noopener noreferrer" title="Visit venue's website">Conference on Financial Cryptography and Data Security, 2013</a>.</span>
+      <a href="https://wpes2026.github.io" rel="noopener noreferrer" title="Visit venue's website">Workshop on Privacy in the Electronic Society, 2026</a>.</span>
   </div>
     <!-- Related papers/misc -->
   </section>
@@ -230,8 +230,18 @@
     
     <ol class="link-list">
       <li>
-        <a href="/publications/onionsforsale-fc2013.pdf" role="button" title="PDF">
+        <a href="/publications/cricket-wpes2026.pdf" role="button" title="PDF">
           <i class="fas fa-file-pdf"></i>PDF
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/GurjotSingh02/cricket-1d-darts" role="button" title="Code">
+          <i class="fas fa-code"></i>Code
+        </a>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1145/3847192.3847366" role="button" title="DOI">
+          <i class="ai ai-doi"></i>DOI
         </a>
       </li>
     
@@ -247,18 +257,8 @@
     
     <ol class="link-list">
       <li>
-        <a href="https://fc13.ifca.ai" role="button" title="Venue Website">
+        <a href="https://wpes2026.github.io" role="button" title="Venue Website">
           <i class="fas fa-globe"></i>Website
-        </a>
-      </li>
-      <li>
-        <a href="https://fc13.ifca.ai/program.html" role="button" title="Venue URL">
-          <i class="fas fa-link"></i>URL
-        </a>
-      </li>
-      <li>
-        <a href="https://fc13.ifca.ai/proc/Poster-6.pdf", role="button" title="Venue PDF">
-          <i class="fas fa-file-pdf"></i>PDF
         </a>
       </li>
     
@@ -284,7 +284,7 @@
   
   <section class="abs">
     <h3>Abstract</h3>
-    <p>We propose that Tor supports the purchase of its services.</p>
+    <p>Despite the use of encryption, the low-latency nature of the Tor anonymity network leaves users’ traffic exposed to traffic analysis attacks aimed at uncovering the websites visited by users. These attacks, known as website fingerprinting (WF), have increasingly relied on deep neural networks (DNNs) due to their effectiveness in identifying complex traffic patterns. Thus far, however, the development of suitable DNN architectures for WF attacks has resorted to trial-and-error, potentially overlooking more effective and/or efficient attack models. In this paper, we introduce Cricket, a framework for the automatic exploration of DNNs tailored to complex WF tasks. Cricket leverages and adapts DARTS, a prominent neural architecture search (NAS) approach, to discover new DNN architectures that perform best for a given WF task. In evaluating Cricket, we find that: (1) in a closed-world setting, Cricket consistently outperforms the SOTA attacks by 2–7 points and up to 13 points against WF defenses; (2) in an open-world setting, Cricket offers comparable performance to SOTA attacks against SOTA defenses; and (3) the novel DNNs produced by Cricket use 1/3 to 1/2 as many parameters as the SOTA models. Our results show how Cricket adapts to the WF context to produce novel DNNs that are both more effective and more compact than existing models.</p>
   </section>
   
 
@@ -292,12 +292,12 @@
   
   <section class="bibtex">
     <h3>Bibtex</h3>
-    <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@misc</span><span class="p">{</span><span class="nl">onionsforsale-fc2013</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Onions for Sale: Putting Privacy on the Market}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Johnson, Aaron and Jansen, Rob and Syverson, Paul}</span><span class="p">,</span>
-  <span class="na">howpublished</span> <span class="p">=</span> <span class="s">{Conference on Financial Cryptography and Data Security}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2013}</span><span class="p">,</span>
-  <span class="na">note</span> <span class="p">=</span> <span class="s">{Poster abstract}</span><span class="p">,</span>
+    <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">cricket-wpes2026</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Neural Architecture Search for Adaptive Website Fingerprinting}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Singh, Gurjot and Jansen, Rob and Barradas, Diogo}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Workshop on Privacy in the Electronic Society}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1145/3847192.3847366}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
   </section>
   
